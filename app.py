@@ -38,3 +38,5 @@ if st.button("Get Weather"):
 
         else:
             st.error("City not found.")
+            st.error(f"Status Code: {response.status_code}")
+            st.json(data)
