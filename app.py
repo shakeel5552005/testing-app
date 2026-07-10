@@ -15,7 +15,7 @@ if st.button("Get Weather"):
         st.warning("Please enter a city name.")
 
     else:
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={karachi}&appid={ccfb4b54c4d160bc7ab5b309c16bcc5b}&units=metric"
+        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={ccfb4b54c4d160bc7ab5b309c16bcc5b}&units=metric"
 
         response = requests.get(url)
 
