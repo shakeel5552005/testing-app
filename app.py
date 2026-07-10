@@ -37,3 +37,4 @@ if st.button("Get Weather"):
 
         else:
             st.error("City not found.")
+            
