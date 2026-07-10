@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_KEY = "ccfb4b54c4d160bc7ab5b309c16bcc5b"
+API_KEY = "15a0bdf79c5d8d99439ac1789ebc5756"
 
 
 st.set_page_config(page_title="Weather App", page_icon="🌦️")
