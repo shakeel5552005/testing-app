@@ -109,5 +109,5 @@ else:
 
     ✔ Plotly
 
-    ✔ Python
+    ✔ Python1
     """)
