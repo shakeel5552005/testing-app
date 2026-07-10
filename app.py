@@ -1,42 +1,113 @@
 import streamlit as st
-import requests
+import pandas as pd
 
-API_KEY = "a48762bcb94af4a5696a15ad5d599b21"
+# -----------------------
+# Page Config
+# -----------------------
 
+st.set_page_config(
+    page_title="Smart Excel Analyzer",
+    page_icon="📊",
+    layout="wide"
+)
 
-st.set_page_config(page_title="Weather App", page_icon="🌦️")
+# -----------------------
+# Load CSS
+# -----------------------
 
-st.title("🌦️ Weather App")
+with open("assets/style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-city = st.text_input("Enter City Name")
+# -----------------------
+# Sidebar
+# -----------------------
 
-if st.button("Get Weather"):
+st.sidebar.title("📂 Navigation")
 
-    if city == "":
-        st.warning("Please enter a city name.")
+menu = st.sidebar.radio(
+    "Choose Option",
+    [
+        "Dashboard",
+        "Upload Excel",
+        "About"
+    ]
+)
 
-    else:
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
+# -----------------------
+# Header
+# -----------------------
 
-        response = requests.get(url)
+st.markdown(
+    "<p class='main-title'>📊 Smart Excel Analyzer Pro</p>",
+    unsafe_allow_html=True
+)
 
-        data = response.json()
+st.markdown(
+    "<p class='sub-title'>Analyze Excel files with interactive dashboard.</p>",
+    unsafe_allow_html=True
+)
 
-        if response.status_code == 200:
+st.divider()
 
-            st.success(f"Weather in {city}")
+# -----------------------
+# Dashboard
+# -----------------------
 
-            st.write(f"🌡 Temperature : {data['main']['temp']} °C")
+if menu == "Dashboard":
 
-            st.write(f"🤗 Feels Like : {data['main']['feels_like']} °C")
+    col1, col2, col3 = st.columns(3)
 
-            st.write(f"💧 Humidity : {data['main']['humidity']} %")
+    col1.metric("📄 Files", 0)
 
-            st.write(f"🌬 Wind Speed : {data['wind']['speed']} m/s")
+    col2.metric("📊 Rows", 0)
 
-            st.write(f"☁ Condition : {data['weather'][0]['description'].title()}")
+    col3.metric("📈 Columns", 0)
+
+    st.info("Upload an Excel file from the sidebar.")
+
+# -----------------------
+# Upload
+# -----------------------
+
+elif menu == "Upload Excel":
+
+    uploaded_file = st.file_uploader(
+        "Upload Excel File",
+        type=["xlsx", "xls", "csv"]
+    )
+
+    if uploaded_file:
+
+        if uploaded_file.name.endswith(".csv"):
+
+            df = pd.read_csv(uploaded_file)
 
         else:
-            st.error("City not found.")
-            st.error(f"Status Code: {response.status_code}")
-            st.json(data)
+
+            df = pd.read_excel(uploaded_file)
+
+        st.success("File uploaded successfully!")
+
+        st.dataframe(df, use_container_width=True)
+
+# -----------------------
+# About
+# -----------------------
+
+else:
+
+    st.header("About")
+
+    st.write("""
+    Smart Excel Analyzer Pro
+
+    Developed using:
+
+    ✔ Streamlit
+
+    ✔ Pandas
+
+    ✔ Plotly
+
+    ✔ Python
+    """)
