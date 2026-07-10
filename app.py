@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
 
-API_KEY = "YOUR_API_KEY"
+API_KEY = "ccfb4b54c4d160bc7ab5b309c16bcc5b"
+
 
 st.set_page_config(page_title="Weather App", page_icon="🌦️")
 
@@ -15,7 +16,7 @@ if st.button("Get Weather"):
         st.warning("Please enter a city name.")
 
     else:
-        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={"ccfb4b54c4d160bc7ab5b309c16bcc5b"}&units=metric"
+        url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
 
         response = requests.get(url)
 
