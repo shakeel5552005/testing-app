@@ -57,3 +57,4 @@ if uploaded_file is not None:
     st.dataframe(df.dtypes.astype(str).reset_index().rename(
         columns={"index": "Column", 0: "Data Type"}
     ))
+        
