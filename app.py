@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from charts import create_chart
 
 # ----------------------------------
 # Page Configuration
@@ -30,7 +31,7 @@ if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
 
         st.success("✅ CSV Loaded Successfully!")
-
+        create_chart(df)
         # ----------------------------------
         # Preview
         # ----------------------------------
