@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from charts import create_chart
+from qa import answer_question
 
 # ----------------------------------
 # Page Configuration

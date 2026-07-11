@@ -1,9 +1,1001 @@
-Product,Category,City,Sales,Quantity
-Laptop,Electronics,Karachi,150000,3
-Mouse,Electronics,Lahore,5000,10
-Keyboard,Electronics,Karachi,12000,6
-Chair,Furniture,Islamabad,25000,4
-Table,Furniture,Lahore,40000,2
-Mobile,Electronics,Karachi,90000,5
-Fan,Home,Karachi,18000,8
-AC,Home,Lahore,85000,22
+Customer_ID,Customer_Name,Gender,Age,City,Product,Category,Quantity,Unit_Price,Discount_%,Total_Sales,Profit,Order_Date,Payment_Method,Salesperson
+C0001,Maryam,Female,48,Peshawar,Headphones,Accessories,2,5385,10,9693,1214.69,2025-12-10,EasyPaisa,Zoya
+C0002,Ali Khan,Male,54,Islamabad,Headphones,Accessories,5,5313,10,23908.5,5090.52,2026-06-24,Bank Transfer,Aamir
+C0003,Hina,Male,29,Lahore,Mouse,Accessories,3,1577,10,4257.9,400.98,2025-07-02,JazzCash,Nida
+C0004,Sara Ahmed,Male,65,Rawalpindi,Monitor,Electronics,1,27762,0,27762,3249.26,2025-10-15,JazzCash,Saad
+C0005,Hassan Ali,Female,19,Rawalpindi,Headphones,Accessories,4,5419,0,21676,3362.56,2025-08-16,Card,Zoya
+C0006,Hina,Male,34,Peshawar,Mouse,Accessories,2,1476,5,2804.4,657.31,2025-08-12,EasyPaisa,Nida
+C0007,Zain,Female,32,Lahore,Keyboard,Accessories,4,3170,10,11412,1909.78,2026-02-19,JazzCash,Usman
+C0008,Hina,Male,51,Lahore,Keyboard,Accessories,4,3631,10,13071.6,1378,2025-05-15,JazzCash,Usman
+C0009,Bilal,Male,41,Quetta,Monitor,Electronics,2,27808,5,52835.2,8272,2026-02-14,EasyPaisa,Zoya
+C0010,Fatima Noor,Female,19,Hyderabad,Printer,Office,4,25271,0,101084,23249.25,2025-10-25,Bank Transfer,Zoya
+C0011,Maryam,Male,53,Karachi,Monitor,Electronics,5,26804,10,120618,18683.76,2025-09-06,Card,Saad
+C0012,Ahmed Raza,Male,39,Islamabad,Keyboard,Accessories,2,3536,15,6011.2,852.78,2025-01-25,JazzCash,Zoya
+C0013,Ali Khan,Male,65,Karachi,Headphones,Accessories,4,5120,0,20480,4356.73,2026-02-05,Cash,Nida
+C0014,Zain,Male,38,Peshawar,Mouse,Accessories,1,1547,15,1314.95,135.81,2025-04-28,Cash,Saad
+C0015,Ayesha Khan,Male,49,Quetta,Mouse,Accessories,3,1450,15,3697.5,500.8,2025-05-29,Card,Zoya
+C0016,Fatima Noor,Female,30,Lahore,Printer,Office,3,23432,0,70296,7107.2,2025-04-03,EasyPaisa,Nida
+C0017,Usman,Female,37,Karachi,Mouse,Accessories,4,1504,15,5113.6,700.89,2025-11-23,EasyPaisa,Nida
+C0018,Usman,Male,22,Islamabad,Keyboard,Accessories,1,3264,15,2774.4,580.96,2025-09-29,Card,Nida
+C0019,Bilal,Female,41,Faisalabad,Printer,Office,4,25559,5,97124.2,11051.05,2026-07-04,JazzCash,Zoya
+C0020,Fatima Noor,Male,52,Karachi,Monitor,Electronics,4,28708,10,103348.8,15513.32,2025-01-11,JazzCash,Saad
+C0021,Bilal,Male,21,Quetta,Laptop,Electronics,3,87822,5,250292.7,20879.24,2025-11-23,Bank Transfer,Nida
+C0022,Sara Ahmed,Female,49,Lahore,Printer,Office,4,24184,0,96736,18235.2,2025-08-23,Bank Transfer,Nida
+C0023,Bilal,Female,27,Karachi,Monitor,Electronics,3,29861,10,80624.7,10294.22,2025-06-15,Bank Transfer,Zoya
+C0024,Zain,Male,44,Rawalpindi,Headphones,Accessories,4,5311,15,18057.4,2225.54,2025-02-27,Card,Saad
+C0025,Fatima Noor,Female,45,Hyderabad,Mouse,Accessories,5,1407,5,6683.25,1451.23,2026-02-01,Bank Transfer,Saad
+C0026,Usman,Male,36,Hyderabad,Printer,Office,5,25758,0,128790,23587.14,2025-05-25,Cash,Zoya
+C0027,Hina,Female,29,Islamabad,Mouse,Accessories,4,1638,0,6552,1491.23,2025-10-11,Bank Transfer,Aamir
+C0028,Hina,Male,27,Rawalpindi,Mouse,Accessories,3,1447,5,4123.95,727.85,2025-09-15,Card,Nida
+C0029,Fatima Noor,Male,33,Peshawar,Laptop,Electronics,4,80108,0,320432,48033.34,2025-05-25,Card,Saad
+C0030,Hina,Female,29,Hyderabad,Printer,Office,5,24162,10,108729,24142.82,2025-05-29,Card,Nida
+C0031,Hassan Ali,Female,44,Karachi,Headphones,Accessories,4,5001,0,20004,3478.75,2025-06-20,EasyPaisa,Aamir
+C0032,Hina,Male,42,Faisalabad,Keyboard,Accessories,3,3353,0,10059,940.42,2025-06-19,Cash,Saad
+C0033,Fatima Noor,Male,38,Karachi,Keyboard,Accessories,3,3812,15,9720.6,1619.93,2025-02-02,EasyPaisa,Saad
+C0034,Ahmed Raza,Female,41,Faisalabad,Headphones,Accessories,2,4914,15,8353.8,739.15,2025-10-31,JazzCash,Zoya
+C0035,Usman,Female,35,Quetta,Printer,Office,4,24623,15,83718.2,16786.8,2026-06-18,JazzCash,Nida
+C0036,Ayesha Khan,Male,46,Faisalabad,Keyboard,Accessories,4,3265,15,11101,2651.39,2026-02-21,Card,Zoya
+C0037,Sara Ahmed,Female,43,Hyderabad,Laptop,Electronics,3,86132,10,232556.4,48348.68,2025-08-21,EasyPaisa,Usman
+C0038,Sara Ahmed,Female,65,Faisalabad,Mouse,Accessories,1,1561,15,1326.85,150.24,2026-02-09,Card,Usman
+C0039,Hassan Ali,Male,20,Islamabad,Monitor,Electronics,4,30740,5,116812,10794.29,2025-08-22,JazzCash,Zoya
+C0040,Hamza,Male,43,Hyderabad,Monitor,Electronics,2,25748,5,48921.2,11448.69,2026-05-25,Bank Transfer,Usman
+C0041,Zain,Female,21,Quetta,Laptop,Electronics,3,81183,5,231371.55,23975.29,2025-02-19,JazzCash,Aamir
+C0042,Maryam,Male,47,Peshawar,Keyboard,Accessories,5,3249,15,13808.25,3295.28,2025-05-22,Cash,Usman
+C0043,Fatima Noor,Female,26,Islamabad,Monitor,Electronics,2,27566,0,55132,6921.26,2025-06-27,Cash,Zoya
+C0044,Hassan Ali,Female,32,Islamabad,Monitor,Electronics,5,30602,0,153010,34368.59,2025-01-14,EasyPaisa,Nida
+C0045,Usman,Male,45,Peshawar,Monitor,Electronics,2,25517,0,51034,12362.28,2025-01-04,Cash,Aamir
+C0046,Ali Khan,Male,62,Lahore,Keyboard,Accessories,5,3799,15,16145.75,2213.67,2025-11-04,JazzCash,Usman
+C0047,Hassan Ali,Female,60,Karachi,Headphones,Accessories,5,4827,5,22928.25,2875.81,2025-02-25,Card,Nida
+C0048,Sara Ahmed,Female,24,Quetta,Headphones,Accessories,3,4705,0,14115,1661.51,2026-01-16,Card,Aamir
+C0049,Hassan Ali,Male,34,Quetta,Keyboard,Accessories,2,3299,0,6598,1039.05,2025-12-20,JazzCash,Usman
+C0050,Fatima Noor,Male,65,Islamabad,Printer,Office,1,25732,0,25732,5561.06,2025-05-25,Bank Transfer,Aamir
+C0051,Fatima Noor,Male,48,Quetta,Mouse,Accessories,3,1404,5,4001.4,516.2,2026-03-17,JazzCash,Saad
+C0052,Fatima Noor,Male,50,Islamabad,Printer,Office,3,21875,15,55781.25,5883.49,2025-11-26,JazzCash,Aamir
+C0053,Hassan Ali,Male,46,Lahore,Monitor,Electronics,4,28892,5,109789.6,16636.67,2025-08-31,Bank Transfer,Aamir
+C0054,Sara Ahmed,Male,50,Islamabad,Keyboard,Accessories,4,3525,10,12690,3078.98,2025-09-02,Bank Transfer,Saad
+C0055,Bilal,Male,42,Quetta,Mouse,Accessories,5,1498,15,6366.5,1010.75,2025-09-26,JazzCash,Saad
+C0056,Hina,Female,59,Quetta,Monitor,Electronics,1,25721,5,24434.95,4909.48,2025-02-26,Card,Aamir
+C0057,Sara Ahmed,Male,24,Lahore,Monitor,Electronics,1,29692,10,26722.8,4353.63,2025-01-23,Bank Transfer,Aamir
+C0058,Bilal,Female,50,Rawalpindi,Keyboard,Accessories,4,3393,0,13572,2714.01,2026-01-15,EasyPaisa,Aamir
+C0059,Maryam,Female,64,Karachi,Laptop,Electronics,5,79321,15,337114.25,80120.61,2026-04-10,JazzCash,Usman
+C0060,Zain,Female,49,Faisalabad,Keyboard,Accessories,3,3198,10,8634.6,1284.12,2026-05-17,JazzCash,Nida
+C0061,Ali Khan,Male,51,Karachi,Keyboard,Accessories,5,3282,10,14769,1722.74,2025-02-18,JazzCash,Usman
+C0062,Bilal,Female,35,Quetta,Printer,Office,1,25914,10,23322.6,5284.49,2026-04-28,Cash,Usman
+C0063,Zain,Male,59,Hyderabad,Monitor,Electronics,2,30717,10,55290.6,6566.61,2025-10-11,Card,Usman
+C0064,Bilal,Female,38,Peshawar,Printer,Office,2,22153,15,37660.1,3308.95,2025-07-18,EasyPaisa,Zoya
+C0065,Hamza,Female,51,Quetta,Printer,Office,2,22956,15,39025.2,4147.04,2025-11-08,Card,Aamir
+C0066,Ali Khan,Female,54,Rawalpindi,Headphones,Accessories,3,4582,10,12371.4,2400.93,2025-05-19,EasyPaisa,Zoya
+C0067,Hina,Female,26,Quetta,Printer,Office,4,22665,15,77061,12155.77,2026-04-03,EasyPaisa,Saad
+C0068,Ayesha Khan,Male,29,Karachi,Printer,Office,3,25624,5,73028.4,8002.1,2025-05-24,Cash,Zoya
+C0069,Ahmed Raza,Male,50,Hyderabad,Headphones,Accessories,2,4525,0,9050,1829.09,2025-01-23,Bank Transfer,Saad
+C0070,Fatima Noor,Male,58,Rawalpindi,Keyboard,Accessories,4,3503,0,14012,1365.62,2025-12-11,JazzCash,Usman
+C0071,Usman,Female,65,Peshawar,Headphones,Accessories,5,5029,15,21373.25,1782.87,2025-07-02,Card,Saad
+C0072,Maryam,Male,58,Hyderabad,Mouse,Accessories,4,1463,5,5559.4,445.53,2025-02-25,Card,Zoya
+C0073,Ahmed Raza,Female,44,Islamabad,Headphones,Accessories,2,4516,0,9032,1930.08,2025-01-09,EasyPaisa,Saad
+C0074,Ayesha Khan,Male,47,Peshawar,Keyboard,Accessories,5,3312,0,16560,2531.9,2026-02-03,JazzCash,Zoya
+C0075,Ali Khan,Female,23,Peshawar,Monitor,Electronics,2,28103,10,50585.4,12191.42,2026-06-20,Cash,Saad
+C0076,Ayesha Khan,Male,20,Peshawar,Laptop,Electronics,3,88519,5,252279.15,27378.26,2025-05-17,JazzCash,Usman
+C0077,Zain,Female,57,Lahore,Headphones,Accessories,4,5125,10,18450,4221.14,2025-06-19,Cash,Saad
+C0078,Bilal,Female,32,Peshawar,Laptop,Electronics,1,85838,0,85838,11686.64,2025-10-09,Cash,Saad
+C0079,Hina,Female,25,Islamabad,Printer,Office,1,25046,10,22541.4,3843.03,2026-06-05,Card,Usman
+C0080,Bilal,Male,35,Hyderabad,Keyboard,Accessories,3,3722,10,10049.4,2356.68,2025-08-31,EasyPaisa,Zoya
+C0081,Sara Ahmed,Female,44,Quetta,Headphones,Accessories,5,4641,0,23205,5596.29,2025-10-16,EasyPaisa,Aamir
+C0082,Ayesha Khan,Female,31,Karachi,Printer,Office,5,22682,5,107739.5,10099.05,2025-08-05,Bank Transfer,Aamir
+C0083,Fatima Noor,Female,25,Peshawar,Printer,Office,1,23072,0,23072,3899.57,2026-02-18,Bank Transfer,Usman
+C0084,Hamza,Female,63,Quetta,Keyboard,Accessories,2,3503,5,6655.7,997.76,2026-01-25,Bank Transfer,Zoya
+C0085,Hamza,Female,63,Rawalpindi,Headphones,Accessories,5,5345,15,22716.25,4186.23,2026-02-19,Cash,Zoya
+C0086,Hassan Ali,Female,38,Karachi,Printer,Office,5,26161,5,124264.75,25768.98,2025-06-08,EasyPaisa,Usman
+C0087,Bilal,Female,35,Hyderabad,Keyboard,Accessories,2,3420,15,5814,688.97,2026-04-20,Bank Transfer,Nida
+C0088,Maryam,Female,32,Hyderabad,Mouse,Accessories,5,1519,5,7215.25,640.39,2025-03-20,JazzCash,Zoya
+C0089,Hina,Female,64,Lahore,Keyboard,Accessories,4,3313,15,11264.2,1058.42,2026-04-29,Card,Nida
+C0090,Ayesha Khan,Female,22,Rawalpindi,Headphones,Accessories,2,5319,10,9574.2,2373.94,2025-01-04,Bank Transfer,Zoya
+C0091,Sara Ahmed,Male,51,Lahore,Headphones,Accessories,5,5100,5,24225,4726.54,2025-03-10,EasyPaisa,Zoya
+C0092,Fatima Noor,Male,46,Rawalpindi,Headphones,Accessories,5,5176,5,24586,4709.75,2025-01-23,Card,Aamir
+C0093,Fatima Noor,Male,37,Karachi,Printer,Office,3,23069,0,69207,12137.61,2025-03-12,Card,Usman
+C0094,Hina,Female,57,Rawalpindi,Monitor,Electronics,5,28206,10,126927,27825.13,2026-05-17,Bank Transfer,Zoya
+C0095,Usman,Male,31,Peshawar,Printer,Office,2,24614,5,46766.6,5157.9,2025-09-03,JazzCash,Zoya
+C0096,Ayesha Khan,Male,48,Rawalpindi,Monitor,Electronics,5,26133,5,124131.75,18269.8,2025-01-04,EasyPaisa,Saad
+C0097,Fatima Noor,Female,39,Hyderabad,Monitor,Electronics,4,26320,15,89488,17912.49,2026-06-09,Cash,Usman
+C0098,Ahmed Raza,Male,44,Hyderabad,Monitor,Electronics,1,30352,10,27316.8,3066.81,2026-01-05,Bank Transfer,Saad
+C0099,Zain,Female,24,Quetta,Laptop,Electronics,1,89286,10,80357.4,11005.75,2025-06-21,Cash,Zoya
+C0100,Maryam,Female,43,Karachi,Monitor,Electronics,3,30390,5,86611.5,19364.56,2026-04-10,Bank Transfer,Saad
+C0101,Zain,Male,45,Quetta,Keyboard,Accessories,3,3705,15,9447.75,2031.12,2026-05-21,Bank Transfer,Nida
+C0102,Ayesha Khan,Female,25,Islamabad,Keyboard,Accessories,3,3192,15,8139.6,1991.46,2026-02-06,Cash,Aamir
+C0103,Ayesha Khan,Male,61,Hyderabad,Headphones,Accessories,2,4514,10,8125.2,944.6,2025-02-26,JazzCash,Nida
+C0104,Hina,Male,34,Peshawar,Laptop,Electronics,1,93385,15,79377.25,7648.2,2025-02-14,JazzCash,Saad
+C0105,Ayesha Khan,Female,63,Islamabad,Laptop,Electronics,4,79163,10,284986.8,36187.19,2025-01-07,Bank Transfer,Aamir
+C0106,Zain,Male,46,Faisalabad,Keyboard,Accessories,2,3439,0,6878,1265.24,2026-04-17,EasyPaisa,Zoya
+C0107,Hamza,Female,27,Hyderabad,Keyboard,Accessories,2,3473,5,6598.7,1131.43,2025-04-08,Bank Transfer,Aamir
+C0108,Ayesha Khan,Female,54,Hyderabad,Keyboard,Accessories,5,3592,5,17062,2596.86,2025-04-27,JazzCash,Zoya
+C0109,Hassan Ali,Male,56,Hyderabad,Laptop,Electronics,3,89747,0,269241,28700.9,2025-08-17,Card,Aamir
+C0110,Hina,Male,52,Rawalpindi,Laptop,Electronics,2,81898,0,163796,40713.11,2025-04-17,Bank Transfer,Aamir
+C0111,Hina,Male,47,Faisalabad,Keyboard,Accessories,3,3334,15,8501.7,1639.53,2026-05-12,JazzCash,Saad
+C0112,Ayesha Khan,Female,62,Peshawar,Laptop,Electronics,4,88081,5,334707.8,72574.61,2025-09-08,Cash,Nida
+C0113,Hina,Male,47,Islamabad,Mouse,Accessories,1,1638,5,1556.1,375.29,2025-02-20,JazzCash,Aamir
+C0114,Bilal,Male,55,Faisalabad,Headphones,Accessories,4,5047,10,18169.2,3754.09,2026-03-01,Card,Aamir
+C0115,Ayesha Khan,Female,25,Islamabad,Laptop,Electronics,5,77263,0,386315,59512.71,2026-03-12,Cash,Zoya
+C0116,Bilal,Male,51,Karachi,Mouse,Accessories,3,1572,15,4008.6,845.35,2026-05-16,Card,Usman
+C0117,Ayesha Khan,Male,25,Peshawar,Monitor,Electronics,4,29020,0,116080,22079.54,2026-02-26,Card,Aamir
+C0118,Ayesha Khan,Male,18,Faisalabad,Headphones,Accessories,1,5087,10,4578.3,608.31,2025-01-15,JazzCash,Aamir
+C0119,Hassan Ali,Female,49,Faisalabad,Mouse,Accessories,5,1458,5,6925.5,1092.38,2025-12-16,JazzCash,Nida
+C0120,Hamza,Male,53,Lahore,Headphones,Accessories,5,4857,10,21856.5,2925.64,2025-06-10,EasyPaisa,Zoya
+C0121,Fatima Noor,Female,60,Hyderabad,Mouse,Accessories,5,1525,0,7625,1606.05,2026-04-29,Cash,Saad
+C0122,Bilal,Male,62,Lahore,Printer,Office,2,23478,10,42260.4,3474.33,2026-04-17,Bank Transfer,Zoya
+C0123,Usman,Male,37,Quetta,Mouse,Accessories,2,1397,10,2514.6,452.38,2026-02-14,Cash,Aamir
+C0124,Maryam,Female,47,Peshawar,Printer,Office,3,23873,10,64457.1,5561.82,2025-01-22,Bank Transfer,Nida
+C0125,Fatima Noor,Female,61,Peshawar,Mouse,Accessories,3,1643,0,4929,406.78,2026-03-25,Cash,Saad
+C0126,Sara Ahmed,Female,40,Peshawar,Headphones,Accessories,2,5077,0,10154,1236.37,2025-07-12,Bank Transfer,Saad
+C0127,Hamza,Female,37,Lahore,Monitor,Electronics,3,29111,15,74233.05,7893.08,2026-03-17,Bank Transfer,Aamir
+C0128,Zain,Female,52,Peshawar,Keyboard,Accessories,1,3606,15,3065.1,598.72,2025-02-03,Cash,Zoya
+C0129,Ali Khan,Female,52,Lahore,Keyboard,Accessories,5,3168,5,15048,1881.31,2025-07-26,JazzCash,Usman
+C0130,Fatima Noor,Male,47,Rawalpindi,Laptop,Electronics,3,80176,15,204448.8,29125.21,2026-02-08,Cash,Zoya
+C0131,Ayesha Khan,Female,58,Peshawar,Mouse,Accessories,2,1433,0,2866,509.67,2025-05-12,Card,Zoya
+C0132,Hamza,Male,47,Faisalabad,Monitor,Electronics,2,30020,0,60040,10262.46,2025-04-25,Card,Zoya
+C0133,Hina,Male,39,Peshawar,Printer,Office,5,26318,15,111851.5,24151.35,2025-10-06,JazzCash,Nida
+C0134,Ayesha Khan,Female,39,Rawalpindi,Laptop,Electronics,2,86551,15,147136.7,29080.02,2026-04-06,JazzCash,Aamir
+C0135,Hamza,Female,37,Karachi,Printer,Office,1,23315,5,22149.25,4572.74,2025-04-18,EasyPaisa,Usman
+C0136,Ahmed Raza,Female,22,Rawalpindi,Headphones,Accessories,1,4724,10,4251.6,391.71,2025-02-05,JazzCash,Nida
+C0137,Sara Ahmed,Female,63,Quetta,Laptop,Electronics,3,87241,5,248636.85,21387.03,2026-05-18,JazzCash,Nida
+C0138,Bilal,Female,49,Lahore,Monitor,Electronics,3,27983,0,83949,12701.81,2025-04-01,Cash,Usman
+C0139,Hina,Male,29,Peshawar,Headphones,Accessories,2,4737,10,8526.6,960.21,2025-08-23,Card,Zoya
+C0140,Maryam,Male,27,Islamabad,Headphones,Accessories,4,4811,0,19244,4561.59,2025-11-14,Bank Transfer,Saad
+C0141,Ahmed Raza,Female,60,Hyderabad,Printer,Office,2,23575,15,40077.5,5335.49,2026-07-01,EasyPaisa,Aamir
+C0142,Ayesha Khan,Male,51,Faisalabad,Keyboard,Accessories,2,3736,5,7098.4,1331.83,2026-01-26,JazzCash,Saad
+C0143,Sara Ahmed,Male,25,Peshawar,Printer,Office,3,23387,0,70161,12812.9,2025-03-13,Cash,Saad
+C0144,Hina,Male,20,Rawalpindi,Printer,Office,2,22918,15,38960.6,8101.32,2025-12-10,EasyPaisa,Zoya
+C0145,Hina,Male,37,Islamabad,Keyboard,Accessories,3,3722,5,10607.7,1238.14,2025-10-06,Card,Nida
+C0146,Ayesha Khan,Male,41,Peshawar,Laptop,Electronics,4,91473,15,311008.2,74432.46,2026-05-30,EasyPaisa,Zoya
+C0147,Bilal,Female,37,Rawalpindi,Monitor,Electronics,5,29502,10,132759,19846.28,2026-03-21,EasyPaisa,Saad
+C0148,Fatima Noor,Female,18,Karachi,Mouse,Accessories,4,1452,0,5808,839.64,2025-10-19,EasyPaisa,Saad
+C0149,Sara Ahmed,Male,44,Quetta,Keyboard,Accessories,4,3259,5,12384.2,1467.76,2026-03-30,Cash,Nida
+C0150,Hassan Ali,Female,47,Islamabad,Mouse,Accessories,3,1395,0,4185,732.69,2025-05-07,Card,Nida
+C0151,Zain,Male,54,Peshawar,Laptop,Electronics,4,88176,0,352704,56946.1,2025-03-22,EasyPaisa,Usman
+C0152,Hina,Male,48,Islamabad,Keyboard,Accessories,5,3450,10,15525,1412.71,2025-06-30,Card,Zoya
+C0153,Ali Khan,Female,18,Faisalabad,Monitor,Electronics,2,25288,15,42989.6,7230.77,2026-05-02,EasyPaisa,Aamir
+C0154,Sara Ahmed,Female,20,Karachi,Laptop,Electronics,5,84291,0,421455,56770.07,2025-02-02,EasyPaisa,Aamir
+C0155,Bilal,Female,25,Rawalpindi,Keyboard,Accessories,4,3830,5,14554,2974.13,2025-06-20,JazzCash,Saad
+C0156,Ali Khan,Female,35,Karachi,Keyboard,Accessories,1,3221,15,2737.85,320.34,2026-03-26,Bank Transfer,Usman
+C0157,Fatima Noor,Female,42,Peshawar,Printer,Office,1,25070,5,23816.5,2136,2025-04-18,Card,Aamir
+C0158,Ayesha Khan,Male,63,Islamabad,Monitor,Electronics,5,26153,15,111150.25,21760.74,2026-04-12,Cash,Usman
+C0159,Fatima Noor,Male,62,Karachi,Laptop,Electronics,2,91864,10,165355.2,14390.82,2026-06-21,Bank Transfer,Usman
+C0160,Ayesha Khan,Male,18,Rawalpindi,Printer,Office,1,22320,0,22320,3551.56,2025-07-08,JazzCash,Aamir
+C0161,Hassan Ali,Female,59,Karachi,Printer,Office,3,25646,5,73091.1,15054.55,2025-11-13,Cash,Nida
+C0162,Usman,Female,33,Faisalabad,Keyboard,Accessories,1,3688,5,3503.6,711.05,2025-09-28,EasyPaisa,Zoya
+C0163,Maryam,Female,36,Karachi,Monitor,Electronics,3,29745,10,80311.5,13447.98,2025-06-14,Card,Aamir
+C0164,Sara Ahmed,Male,57,Peshawar,Mouse,Accessories,1,1376,10,1238.4,149.34,2026-03-10,JazzCash,Usman
+C0165,Maryam,Male,51,Hyderabad,Keyboard,Accessories,3,3418,5,9741.3,2019.84,2026-07-04,Bank Transfer,Usman
+C0166,Bilal,Male,28,Rawalpindi,Mouse,Accessories,2,1353,10,2435.4,569.21,2026-03-03,Card,Saad
+C0167,Usman,Male,59,Islamabad,Printer,Office,5,25292,10,113814,9491.65,2026-02-01,Bank Transfer,Nida
+C0168,Sara Ahmed,Female,40,Peshawar,Printer,Office,5,23922,10,107649,21925.91,2025-05-16,Card,Nida
+C0169,Hina,Male,53,Faisalabad,Monitor,Electronics,4,28001,10,100803.6,18348.4,2026-07-03,JazzCash,Saad
+C0170,Sara Ahmed,Female,59,Quetta,Mouse,Accessories,5,1536,5,7296,1109.46,2025-04-11,JazzCash,Nida
+C0171,Bilal,Male,37,Quetta,Headphones,Accessories,2,5469,10,9844.2,1361,2025-05-17,Bank Transfer,Aamir
+C0172,Usman,Male,59,Karachi,Mouse,Accessories,1,1644,0,1644,163.39,2025-10-13,JazzCash,Saad
+C0173,Usman,Female,49,Quetta,Mouse,Accessories,1,1565,0,1565,286.92,2026-05-10,EasyPaisa,Zoya
+C0174,Hassan Ali,Female,44,Peshawar,Monitor,Electronics,3,27970,10,75519,7137.12,2025-08-03,Cash,Aamir
+C0175,Hina,Male,40,Islamabad,Monitor,Electronics,3,27486,0,82458,15754.18,2025-06-17,Cash,Aamir
+C0176,Maryam,Female,40,Karachi,Printer,Office,2,25886,15,44006.2,8724.94,2025-12-08,Cash,Usman
+C0177,Bilal,Female,53,Rawalpindi,Keyboard,Accessories,3,3780,5,10773,2258.34,2025-11-11,Cash,Saad
+C0178,Maryam,Female,41,Peshawar,Laptop,Electronics,1,89736,15,76275.6,18811.44,2025-01-31,Bank Transfer,Saad
+C0179,Hamza,Male,61,Faisalabad,Laptop,Electronics,4,89449,15,304126.6,40331.48,2025-04-13,Cash,Zoya
+C0180,Ali Khan,Male,43,Rawalpindi,Mouse,Accessories,4,1487,15,5055.8,506.74,2025-07-13,Card,Usman
+C0181,Zain,Female,46,Hyderabad,Laptop,Electronics,5,85221,0,426105,75684.15,2026-01-20,EasyPaisa,Zoya
+C0182,Ahmed Raza,Female,61,Karachi,Printer,Office,3,25968,5,74008.8,6450.62,2025-11-26,Bank Transfer,Aamir
+C0183,Sara Ahmed,Female,54,Islamabad,Headphones,Accessories,2,5176,10,9316.8,2203.94,2025-01-19,Cash,Usman
+C0184,Hassan Ali,Female,29,Rawalpindi,Headphones,Accessories,2,5139,10,9250.2,742.19,2026-06-17,Bank Transfer,Usman
+C0185,Hassan Ali,Female,47,Peshawar,Keyboard,Accessories,2,3482,10,6267.6,1243.58,2025-04-19,EasyPaisa,Saad
+C0186,Usman,Female,25,Faisalabad,Laptop,Electronics,3,92114,0,276342,32769.51,2026-04-08,JazzCash,Aamir
+C0187,Bilal,Female,56,Karachi,Laptop,Electronics,2,87198,5,165676.2,27482.55,2025-11-23,Cash,Nida
+C0188,Ayesha Khan,Male,37,Karachi,Headphones,Accessories,4,5213,0,20852,2312.45,2025-06-06,EasyPaisa,Nida
+C0189,Maryam,Female,44,Karachi,Mouse,Accessories,2,1524,0,3048,412.71,2025-06-17,JazzCash,Aamir
+C0190,Bilal,Male,44,Karachi,Printer,Office,4,26357,10,94885.2,22917.79,2025-10-07,Card,Zoya
+C0191,Ahmed Raza,Female,64,Lahore,Printer,Office,2,22868,5,43449.2,4765.99,2025-04-01,Cash,Saad
+C0192,Hassan Ali,Female,26,Peshawar,Headphones,Accessories,3,5055,10,13648.5,1192.73,2025-06-30,Card,Zoya
+C0193,Hamza,Male,20,Rawalpindi,Printer,Office,5,23188,5,110143,23803.44,2026-07-01,Card,Saad
+C0194,Usman,Female,50,Rawalpindi,Headphones,Accessories,5,5345,15,22716.25,4197.6,2025-07-30,EasyPaisa,Aamir
+C0195,Fatima Noor,Female,23,Rawalpindi,Printer,Office,4,23771,0,95084,9796.86,2025-04-21,JazzCash,Usman
+C0196,Fatima Noor,Male,20,Peshawar,Mouse,Accessories,4,1535,10,5526,779.99,2025-09-11,Card,Nida
+C0197,Hina,Male,51,Hyderabad,Printer,Office,2,25379,15,43144.3,5702.06,2026-03-25,Cash,Usman
+C0198,Hassan Ali,Male,20,Rawalpindi,Monitor,Electronics,3,30508,10,82371.6,17622.96,2025-12-05,Cash,Saad
+C0199,Zain,Male,52,Peshawar,Headphones,Accessories,5,5215,15,22163.75,3368.48,2025-05-23,Card,Aamir
+C0200,Fatima Noor,Male,62,Karachi,Laptop,Electronics,3,77326,5,220379.1,51605.73,2025-09-23,Cash,Saad
+C0201,Ayesha Khan,Female,57,Quetta,Monitor,Electronics,4,27643,5,105043.4,9862.2,2026-06-03,JazzCash,Usman
+C0202,Usman,Female,61,Lahore,Monitor,Electronics,3,30463,10,82250.1,14596.95,2026-04-16,Card,Saad
+C0203,Zain,Male,45,Karachi,Mouse,Accessories,4,1418,5,5388.4,684.3,2025-04-22,Card,Saad
+C0204,Hamza,Female,50,Hyderabad,Monitor,Electronics,1,28264,5,26850.8,4157.85,2025-01-16,JazzCash,Saad
+C0205,Ayesha Khan,Female,27,Lahore,Printer,Office,4,24366,10,87717.6,20305.35,2025-04-20,EasyPaisa,Saad
+C0206,Fatima Noor,Male,35,Lahore,Laptop,Electronics,4,77635,15,263959,25264.16,2026-01-31,Card,Zoya
+C0207,Hassan Ali,Male,56,Rawalpindi,Printer,Office,4,23301,10,83883.6,11501.38,2025-05-10,Bank Transfer,Usman
+C0208,Zain,Male,61,Islamabad,Laptop,Electronics,3,92500,0,277500,24113.4,2025-06-05,Card,Nida
+C0209,Ali Khan,Male,44,Karachi,Laptop,Electronics,1,87191,0,87191,8169.55,2025-10-26,Cash,Zoya
+C0210,Maryam,Male,39,Lahore,Headphones,Accessories,1,5259,15,4470.15,891.68,2026-05-29,Bank Transfer,Nida
+C0211,Zain,Male,43,Rawalpindi,Printer,Office,2,22171,10,39907.8,4196.19,2025-01-19,Cash,Zoya
+C0212,Maryam,Female,54,Islamabad,Headphones,Accessories,1,5103,5,4847.85,640.3,2025-06-02,EasyPaisa,Saad
+C0213,Sara Ahmed,Male,21,Hyderabad,Laptop,Electronics,2,89486,10,161074.8,20809.62,2025-03-25,EasyPaisa,Nida
+C0214,Sara Ahmed,Male,65,Karachi,Laptop,Electronics,4,83962,15,285470.8,43421.03,2025-01-25,JazzCash,Nida
+C0215,Ahmed Raza,Female,23,Karachi,Mouse,Accessories,2,1533,15,2606.1,497.38,2025-01-30,Card,Aamir
+C0216,Ali Khan,Female,35,Hyderabad,Keyboard,Accessories,4,3463,5,13159.4,2238.18,2025-01-16,Cash,Aamir
+C0217,Ayesha Khan,Male,28,Quetta,Mouse,Accessories,1,1422,10,1279.8,134.13,2025-01-07,Bank Transfer,Usman
+C0218,Usman,Male,22,Faisalabad,Printer,Office,2,25283,10,45509.4,9395.74,2026-02-20,Card,Nida
+C0219,Sara Ahmed,Male,47,Islamabad,Headphones,Accessories,5,5389,0,26945,4136.75,2025-05-24,Bank Transfer,Nida
+C0220,Ali Khan,Male,21,Lahore,Monitor,Electronics,2,29880,10,53784,8915.16,2025-10-23,EasyPaisa,Zoya
+C0221,Hina,Female,57,Karachi,Keyboard,Accessories,3,3832,0,11496,2030.03,2025-04-23,Bank Transfer,Usman
+C0222,Ayesha Khan,Female,30,Quetta,Monitor,Electronics,1,30638,10,27574.2,5666.38,2025-10-02,EasyPaisa,Usman
+C0223,Hassan Ali,Male,39,Rawalpindi,Laptop,Electronics,2,80737,0,161474,34278.43,2025-08-09,Card,Usman
+C0224,Fatima Noor,Male,54,Rawalpindi,Headphones,Accessories,1,5180,0,5180,1255.57,2025-03-21,Card,Usman
+C0225,Hamza,Male,62,Faisalabad,Mouse,Accessories,5,1612,0,8060,1982.48,2026-02-23,EasyPaisa,Nida
+C0226,Ahmed Raza,Male,52,Faisalabad,Laptop,Electronics,1,84353,0,84353,21013.49,2025-07-10,EasyPaisa,Aamir
+C0227,Fatima Noor,Female,57,Quetta,Printer,Office,4,23887,15,81215.8,8823.39,2025-04-01,Cash,Nida
+C0228,Maryam,Female,41,Islamabad,Headphones,Accessories,4,4698,5,17852.4,4154.51,2026-05-27,JazzCash,Usman
+C0229,Maryam,Female,50,Faisalabad,Keyboard,Accessories,4,3451,0,13804,3158.52,2026-05-24,Card,Zoya
+C0230,Sara Ahmed,Male,20,Quetta,Keyboard,Accessories,2,3750,15,6375,1033.95,2025-01-17,EasyPaisa,Zoya
+C0231,Ahmed Raza,Female,19,Islamabad,Printer,Office,5,24398,15,103691.5,23323.39,2025-12-15,JazzCash,Saad
+C0232,Ayesha Khan,Male,28,Rawalpindi,Keyboard,Accessories,5,3179,0,15895,2858.69,2026-04-23,JazzCash,Aamir
+C0233,Usman,Female,18,Karachi,Mouse,Accessories,3,1587,10,4284.9,471.61,2025-03-19,EasyPaisa,Usman
+C0234,Usman,Female,54,Rawalpindi,Mouse,Accessories,2,1401,10,2521.8,413.03,2026-03-24,Card,Zoya
+C0235,Hassan Ali,Male,27,Hyderabad,Monitor,Electronics,2,26586,5,50513.4,4559.63,2025-08-04,EasyPaisa,Usman
+C0236,Bilal,Female,22,Faisalabad,Mouse,Accessories,3,1527,5,4351.95,727.33,2026-01-21,Bank Transfer,Aamir
+C0237,Hassan Ali,Female,60,Faisalabad,Headphones,Accessories,2,4828,15,8207.6,1248.43,2025-10-25,JazzCash,Zoya
+C0238,Bilal,Male,38,Hyderabad,Monitor,Electronics,5,30701,5,145829.75,24598.5,2025-11-21,JazzCash,Aamir
+C0239,Sara Ahmed,Male,40,Rawalpindi,Mouse,Accessories,1,1559,15,1325.15,323.49,2026-05-25,Card,Aamir
+C0240,Usman,Female,42,Faisalabad,Printer,Office,1,24518,5,23292.1,4319.5,2025-12-22,JazzCash,Zoya
+C0241,Bilal,Female,43,Rawalpindi,Mouse,Accessories,2,1421,15,2415.7,302.94,2025-02-05,JazzCash,Saad
+C0242,Ayesha Khan,Female,32,Faisalabad,Laptop,Electronics,5,81387,15,345894.75,81315.39,2025-06-13,Card,Zoya
+C0243,Sara Ahmed,Female,65,Hyderabad,Laptop,Electronics,3,84067,10,226980.9,48565.25,2026-02-01,Bank Transfer,Nida
+C0244,Ali Khan,Female,41,Lahore,Printer,Office,4,22251,0,89004,21287.37,2026-02-22,Bank Transfer,Aamir
+C0245,Sara Ahmed,Male,25,Hyderabad,Keyboard,Accessories,1,3346,10,3011.4,612.26,2026-01-01,EasyPaisa,Saad
+C0246,Bilal,Male,49,Faisalabad,Keyboard,Accessories,4,3791,15,12889.4,1816.15,2025-07-25,Bank Transfer,Zoya
+C0247,Maryam,Female,51,Faisalabad,Headphones,Accessories,5,4694,10,21123,4595.11,2025-04-25,EasyPaisa,Usman
+C0248,Maryam,Female,64,Rawalpindi,Mouse,Accessories,2,1396,15,2373.2,569.51,2026-05-02,JazzCash,Nida
+C0249,Bilal,Female,51,Faisalabad,Printer,Office,5,25176,0,125880,24838.6,2025-10-25,Cash,Zoya
+C0250,Fatima Noor,Male,64,Rawalpindi,Keyboard,Accessories,1,3691,5,3506.45,874.1,2026-05-07,Cash,Aamir
+C0251,Ali Khan,Female,58,Islamabad,Headphones,Accessories,5,4656,0,23280,2989.76,2025-08-04,EasyPaisa,Nida
+C0252,Sara Ahmed,Male,50,Peshawar,Printer,Office,3,22127,10,59742.9,6949.24,2025-01-24,Bank Transfer,Aamir
+C0253,Sara Ahmed,Female,19,Peshawar,Printer,Office,5,25964,0,129820,28247.54,2025-12-28,Cash,Usman
+C0254,Ali Khan,Female,65,Rawalpindi,Printer,Office,4,26287,0,105148,25207.66,2026-01-21,Card,Aamir
+C0255,Hassan Ali,Female,40,Lahore,Monitor,Electronics,2,29926,0,59852,13378.08,2025-03-25,Card,Saad
+C0256,Usman,Male,59,Faisalabad,Printer,Office,4,22908,10,82468.8,16794.41,2026-05-06,Card,Saad
+C0257,Ali Khan,Female,35,Faisalabad,Monitor,Electronics,3,25672,5,73165.2,6821.23,2026-01-17,JazzCash,Nida
+C0258,Bilal,Male,19,Islamabad,Keyboard,Accessories,3,3316,15,8455.8,679.3,2026-06-21,Card,Zoya
+C0259,Bilal,Female,38,Quetta,Printer,Office,4,24845,5,94411,15727.3,2025-07-11,Bank Transfer,Usman
+C0260,Hina,Male,23,Quetta,Keyboard,Accessories,2,3216,0,6432,1138.87,2025-05-12,Bank Transfer,Nida
+C0261,Hassan Ali,Female,20,Karachi,Laptop,Electronics,4,85986,5,326746.8,63145.71,2025-06-26,EasyPaisa,Usman
+C0262,Sara Ahmed,Male,33,Rawalpindi,Mouse,Accessories,4,1369,5,5202.2,742.8,2025-08-15,Bank Transfer,Nida
+C0263,Usman,Male,20,Rawalpindi,Printer,Office,1,23660,0,23660,5380.86,2025-08-28,JazzCash,Aamir
+C0264,Ayesha Khan,Male,59,Peshawar,Laptop,Electronics,5,80451,10,362029.5,71663.46,2025-10-22,Cash,Nida
+C0265,Hassan Ali,Male,56,Islamabad,Mouse,Accessories,5,1488,5,7068,573.12,2025-10-23,JazzCash,Usman
+C0266,Bilal,Female,48,Lahore,Headphones,Accessories,4,4534,10,16322.4,2611.02,2026-05-14,Bank Transfer,Nida
+C0267,Zain,Female,58,Quetta,Keyboard,Accessories,1,3241,0,3241,537.54,2025-09-16,Card,Aamir
+C0268,Usman,Male,45,Karachi,Monitor,Electronics,1,28344,5,26926.8,5695.73,2025-01-09,JazzCash,Saad
+C0269,Ayesha Khan,Male,53,Hyderabad,Monitor,Electronics,4,28435,5,108053,18897.68,2025-09-20,EasyPaisa,Usman
+C0270,Hina,Female,21,Hyderabad,Laptop,Electronics,3,91085,10,245929.5,27910.02,2025-07-24,Cash,Saad
+C0271,Bilal,Male,63,Faisalabad,Mouse,Accessories,2,1470,15,2499,364.5,2025-09-14,JazzCash,Nida
+C0272,Hamza,Male,57,Faisalabad,Mouse,Accessories,3,1613,0,4839,505.55,2026-05-14,Bank Transfer,Aamir
+C0273,Hassan Ali,Male,34,Islamabad,Keyboard,Accessories,5,3324,10,14958,1383.23,2026-04-26,Bank Transfer,Nida
+C0274,Hassan Ali,Male,28,Islamabad,Keyboard,Accessories,5,3449,5,16382.75,3951.33,2026-06-07,JazzCash,Nida
+C0275,Ali Khan,Female,56,Rawalpindi,Laptop,Electronics,2,90132,0,180264,18177.61,2025-05-26,Cash,Saad
+C0276,Bilal,Female,30,Karachi,Laptop,Electronics,2,87587,5,166415.3,31525.06,2025-11-14,Cash,Zoya
+C0277,Sara Ahmed,Female,44,Peshawar,Headphones,Accessories,5,5208,15,22134,3572.33,2025-03-01,EasyPaisa,Aamir
+C0278,Ayesha Khan,Female,63,Islamabad,Headphones,Accessories,5,4689,5,22272.75,3131.34,2026-01-03,Bank Transfer,Aamir
+C0279,Fatima Noor,Male,50,Rawalpindi,Mouse,Accessories,1,1449,15,1231.65,210.77,2025-09-21,Cash,Zoya
+C0280,Sara Ahmed,Female,21,Quetta,Laptop,Electronics,2,92349,0,184698,22263.66,2026-01-15,EasyPaisa,Aamir
+C0281,Sara Ahmed,Female,25,Lahore,Headphones,Accessories,4,4760,15,16184,2171.65,2025-12-10,EasyPaisa,Aamir
+C0282,Hina,Female,64,Quetta,Laptop,Electronics,2,77816,15,132287.2,25649.79,2025-02-26,Bank Transfer,Nida
+C0283,Zain,Male,63,Lahore,Laptop,Electronics,2,91567,10,164820.6,38687.4,2025-12-15,JazzCash,Saad
+C0284,Hassan Ali,Male,30,Islamabad,Printer,Office,5,25445,5,120863.75,29033.5,2025-07-31,Bank Transfer,Saad
+C0285,Ali Khan,Male,62,Lahore,Laptop,Electronics,1,92004,10,82803.6,11609.08,2025-10-18,JazzCash,Saad
+C0286,Ayesha Khan,Male,23,Peshawar,Laptop,Electronics,3,88379,10,238623.3,56572.81,2025-05-11,EasyPaisa,Aamir
+C0287,Ayesha Khan,Male,47,Lahore,Keyboard,Accessories,1,3713,10,3341.7,774.53,2025-01-25,Cash,Aamir
+C0288,Ali Khan,Male,50,Quetta,Monitor,Electronics,3,27087,15,69071.85,15121.85,2025-11-01,EasyPaisa,Zoya
+C0289,Hassan Ali,Male,47,Islamabad,Monitor,Electronics,3,25837,0,77511,8142.45,2026-03-10,Card,Saad
+C0290,Hina,Female,39,Hyderabad,Monitor,Electronics,4,27102,0,108408,14242.93,2025-08-29,Bank Transfer,Saad
+C0291,Ayesha Khan,Male,39,Rawalpindi,Printer,Office,1,24725,5,23488.75,5361.3,2026-03-21,Card,Zoya
+C0292,Bilal,Female,23,Lahore,Headphones,Accessories,5,5083,10,22873.5,2025.22,2025-03-23,Card,Zoya
+C0293,Ahmed Raza,Male,26,Faisalabad,Mouse,Accessories,3,1586,5,4520.1,684.1,2026-05-13,EasyPaisa,Aamir
+C0294,Maryam,Male,23,Faisalabad,Headphones,Accessories,4,5173,10,18622.8,2123.83,2025-11-13,Bank Transfer,Usman
+C0295,Bilal,Female,43,Hyderabad,Laptop,Electronics,3,92583,15,236086.65,52038.69,2025-07-28,Card,Aamir
+C0296,Hina,Female,22,Islamabad,Mouse,Accessories,3,1382,15,3524.1,616.98,2026-01-05,Cash,Zoya
+C0297,Ayesha Khan,Male,31,Lahore,Headphones,Accessories,3,5122,0,15366,3544.92,2025-04-17,JazzCash,Saad
+C0298,Zain,Male,24,Faisalabad,Printer,Office,1,22348,15,18995.8,2723.14,2026-05-26,EasyPaisa,Saad
+C0299,Sara Ahmed,Male,60,Quetta,Monitor,Electronics,5,25254,15,107329.5,15590.84,2025-09-21,Card,Saad
+C0300,Hassan Ali,Male,47,Lahore,Laptop,Electronics,3,86733,15,221169.15,36793.11,2025-07-02,EasyPaisa,Saad
+C0301,Maryam,Male,56,Faisalabad,Printer,Office,5,22248,15,94554,13754.33,2025-06-06,Bank Transfer,Zoya
+C0302,Ahmed Raza,Female,58,Faisalabad,Printer,Office,4,25777,5,97952.6,24295.66,2025-12-29,JazzCash,Aamir
+C0303,Maryam,Male,65,Quetta,Headphones,Accessories,2,4781,0,9562,1089.46,2025-11-02,Bank Transfer,Usman
+C0304,Hassan Ali,Male,61,Lahore,Monitor,Electronics,5,29797,10,134086.5,24475.54,2026-03-21,EasyPaisa,Usman
+C0305,Fatima Noor,Male,29,Lahore,Printer,Office,4,22705,15,77197,7268.67,2025-05-27,Card,Usman
+C0306,Hina,Male,36,Peshawar,Printer,Office,2,22991,10,41383.8,5968.65,2025-11-16,Bank Transfer,Saad
+C0307,Zain,Female,30,Hyderabad,Printer,Office,4,23326,10,83973.6,16418.9,2025-12-09,Cash,Nida
+C0308,Hassan Ali,Male,41,Lahore,Monitor,Electronics,5,30502,5,144884.5,23149.92,2025-08-05,Cash,Aamir
+C0309,Usman,Female,59,Faisalabad,Mouse,Accessories,2,1632,15,2774.4,544.32,2026-04-07,Cash,Usman
+C0310,Ahmed Raza,Male,31,Hyderabad,Mouse,Accessories,5,1387,15,5894.75,998.97,2025-07-23,Cash,Zoya
+C0311,Usman,Male,35,Rawalpindi,Printer,Office,2,24074,5,45740.6,8208.33,2026-04-24,Card,Usman
+C0312,Hamza,Male,45,Faisalabad,Headphones,Accessories,5,5446,0,27230,5195.72,2026-01-22,Cash,Saad
+C0313,Fatima Noor,Male,35,Hyderabad,Mouse,Accessories,1,1520,15,1292,211.18,2025-07-07,JazzCash,Aamir
+C0314,Zain,Male,23,Peshawar,Monitor,Electronics,1,26053,10,23447.7,5580.46,2026-03-18,Card,Nida
+C0315,Hamza,Female,54,Lahore,Printer,Office,2,23822,15,40497.4,3578.43,2025-11-27,JazzCash,Nida
+C0316,Hina,Female,46,Faisalabad,Keyboard,Accessories,2,3803,15,6465.1,1563.73,2026-05-24,Bank Transfer,Saad
+C0317,Ali Khan,Female,45,Karachi,Headphones,Accessories,4,4762,15,16190.8,3861.74,2025-10-28,Cash,Saad
+C0318,Zain,Male,42,Karachi,Mouse,Accessories,5,1552,0,7760,1283.87,2025-11-13,Cash,Nida
+C0319,Sara Ahmed,Female,50,Lahore,Keyboard,Accessories,2,3163,10,5693.4,545.27,2026-05-10,Cash,Usman
+C0320,Fatima Noor,Male,33,Rawalpindi,Laptop,Electronics,2,78417,10,141150.6,33425.62,2025-06-06,Cash,Saad
+C0321,Hina,Male,62,Quetta,Keyboard,Accessories,1,3624,0,3624,878.17,2026-06-22,JazzCash,Nida
+C0322,Bilal,Female,37,Faisalabad,Laptop,Electronics,5,88361,5,419714.75,34128.29,2025-12-03,EasyPaisa,Aamir
+C0323,Hamza,Female,54,Hyderabad,Mouse,Accessories,3,1403,15,3577.65,738.97,2026-06-24,EasyPaisa,Usman
+C0324,Fatima Noor,Male,50,Faisalabad,Keyboard,Accessories,4,3318,15,11281.2,1758.29,2026-05-03,JazzCash,Zoya
+C0325,Maryam,Male,31,Lahore,Printer,Office,4,25081,0,100324,15885.02,2026-06-30,EasyPaisa,Usman
+C0326,Maryam,Female,24,Quetta,Headphones,Accessories,3,4664,15,11893.2,1159.02,2025-04-25,Bank Transfer,Usman
+C0327,Sara Ahmed,Male,20,Islamabad,Mouse,Accessories,1,1387,10,1248.3,200.4,2025-03-30,JazzCash,Nida
+C0328,Fatima Noor,Male,55,Karachi,Headphones,Accessories,4,5274,10,18986.4,2137.88,2025-05-21,JazzCash,Zoya
+C0329,Ahmed Raza,Male,49,Peshawar,Printer,Office,5,22346,10,100557,22960.35,2025-11-25,Bank Transfer,Aamir
+C0330,Fatima Noor,Female,31,Islamabad,Mouse,Accessories,4,1403,10,5050.8,1127.71,2026-03-07,Card,Saad
+C0331,Ayesha Khan,Female,44,Hyderabad,Monitor,Electronics,5,27940,0,139700,13393.77,2025-06-30,EasyPaisa,Saad
+C0332,Fatima Noor,Female,30,Rawalpindi,Monitor,Electronics,3,28599,0,85797,8523.24,2025-07-04,Cash,Saad
+C0333,Bilal,Female,35,Lahore,Keyboard,Accessories,3,3780,15,9639,2152.74,2025-05-31,EasyPaisa,Aamir
+C0334,Fatima Noor,Female,41,Karachi,Mouse,Accessories,1,1533,10,1379.7,310.51,2025-05-25,Card,Usman
+C0335,Hamza,Male,52,Rawalpindi,Headphones,Accessories,2,5052,0,10104,2451.92,2025-07-23,EasyPaisa,Nida
+C0336,Usman,Female,46,Lahore,Printer,Office,5,25188,5,119643,23874.27,2026-03-28,Cash,Aamir
+C0337,Ali Khan,Female,41,Karachi,Mouse,Accessories,5,1359,5,6455.25,832.54,2026-05-22,JazzCash,Usman
+C0338,Ayesha Khan,Male,48,Quetta,Monitor,Electronics,5,25970,5,123357.5,28524.39,2025-08-09,Card,Saad
+C0339,Sara Ahmed,Female,47,Hyderabad,Headphones,Accessories,5,4600,15,19550,4307.38,2025-01-30,JazzCash,Usman
+C0340,Hamza,Male,24,Rawalpindi,Keyboard,Accessories,5,3305,10,14872.5,1430,2026-02-11,Bank Transfer,Nida
+C0341,Ali Khan,Female,37,Rawalpindi,Laptop,Electronics,1,92823,5,88181.85,17566.64,2025-12-21,Cash,Nida
+C0342,Hina,Female,52,Islamabad,Laptop,Electronics,4,79101,0,316404,53760.76,2025-12-01,Cash,Saad
+C0343,Hassan Ali,Male,34,Hyderabad,Laptop,Electronics,1,90216,5,85705.2,18069.64,2025-07-09,Cash,Zoya
+C0344,Ahmed Raza,Female,24,Rawalpindi,Monitor,Electronics,4,29446,15,100116.4,9978.56,2026-03-24,JazzCash,Aamir
+C0345,Hamza,Male,37,Peshawar,Keyboard,Accessories,2,3674,10,6613.2,1195.36,2025-10-08,Card,Usman
+C0346,Ali Khan,Female,21,Karachi,Laptop,Electronics,4,80971,5,307689.8,49695.61,2025-05-28,Card,Usman
+C0347,Fatima Noor,Male,54,Karachi,Keyboard,Accessories,1,3792,15,3223.2,612.93,2026-05-30,EasyPaisa,Zoya
+C0348,Maryam,Male,57,Lahore,Mouse,Accessories,2,1614,10,2905.2,271.68,2025-03-11,EasyPaisa,Nida
+C0349,Sara Ahmed,Male,25,Islamabad,Mouse,Accessories,1,1395,10,1255.5,120.83,2025-10-18,Bank Transfer,Saad
+C0350,Hamza,Female,38,Faisalabad,Laptop,Electronics,4,82474,5,313401.2,47635.01,2026-04-10,Cash,Aamir
+C0351,Fatima Noor,Female,49,Hyderabad,Keyboard,Accessories,3,3352,10,9050.4,906.75,2025-06-11,Cash,Usman
+C0352,Hina,Female,26,Lahore,Printer,Office,5,23957,15,101817.25,9105.99,2026-03-08,JazzCash,Saad
+C0353,Hina,Female,26,Islamabad,Laptop,Electronics,4,87504,5,332515.2,45822.16,2025-01-31,JazzCash,Usman
+C0354,Bilal,Female,57,Peshawar,Monitor,Electronics,5,29248,10,131616,28477.03,2025-11-29,Card,Aamir
+C0355,Ahmed Raza,Female,44,Peshawar,Laptop,Electronics,1,82761,0,82761,17920.47,2025-12-20,Bank Transfer,Zoya
+C0356,Ahmed Raza,Male,53,Rawalpindi,Monitor,Electronics,5,25857,5,122820.75,24118.93,2026-07-04,EasyPaisa,Zoya
+C0357,Hina,Male,47,Islamabad,Printer,Office,3,22394,0,67182,10893.25,2025-02-11,Card,Usman
+C0358,Sara Ahmed,Female,25,Karachi,Monitor,Electronics,5,30614,5,145416.5,23237.96,2025-03-31,EasyPaisa,Zoya
+C0359,Sara Ahmed,Male,28,Islamabad,Headphones,Accessories,5,4552,0,22760,5033.43,2025-05-11,JazzCash,Zoya
+C0360,Maryam,Male,50,Hyderabad,Monitor,Electronics,4,26758,0,107032,24575.29,2025-08-18,JazzCash,Usman
+C0361,Hassan Ali,Female,32,Islamabad,Mouse,Accessories,1,1620,15,1377,180.3,2026-02-16,JazzCash,Saad
+C0362,Bilal,Female,25,Karachi,Keyboard,Accessories,1,3279,10,2951.1,397.54,2025-05-09,EasyPaisa,Saad
+C0363,Maryam,Male,30,Karachi,Laptop,Electronics,5,84569,15,359418.25,66631.3,2025-06-26,Cash,Zoya
+C0364,Bilal,Male,35,Islamabad,Monitor,Electronics,2,25425,0,50850,12474.51,2025-05-25,Bank Transfer,Nida
+C0365,Usman,Male,38,Karachi,Keyboard,Accessories,4,3823,10,13762.8,3119.4,2026-04-11,EasyPaisa,Saad
+C0366,Maryam,Male,49,Quetta,Laptop,Electronics,3,92172,0,276516,45505.38,2026-05-31,Cash,Nida
+C0367,Hassan Ali,Female,35,Faisalabad,Mouse,Accessories,4,1452,15,4936.8,905.21,2025-08-18,Bank Transfer,Nida
+C0368,Usman,Male,56,Peshawar,Keyboard,Accessories,2,3601,15,6121.7,1521.7,2026-05-19,Cash,Saad
+C0369,Ayesha Khan,Female,42,Peshawar,Headphones,Accessories,3,5019,5,14304.15,2399.57,2025-01-22,Bank Transfer,Usman
+C0370,Usman,Male,59,Faisalabad,Mouse,Accessories,5,1363,15,5792.75,908.78,2025-11-20,Card,Aamir
+C0371,Ahmed Raza,Female,35,Lahore,Monitor,Electronics,1,26856,0,26856,2582.96,2026-05-03,JazzCash,Nida
+C0372,Hassan Ali,Female,39,Quetta,Printer,Office,2,22703,15,38595.1,8446.4,2026-06-07,Bank Transfer,Saad
+C0373,Ahmed Raza,Male,23,Faisalabad,Keyboard,Accessories,5,3579,5,17000.25,2692.2,2025-05-26,JazzCash,Zoya
+C0374,Zain,Female,37,Quetta,Laptop,Electronics,4,90522,10,325879.2,29239.61,2025-11-13,Cash,Usman
+C0375,Ayesha Khan,Female,38,Quetta,Keyboard,Accessories,5,3411,5,16202.25,1487.44,2025-02-27,EasyPaisa,Saad
+C0376,Usman,Male,23,Islamabad,Laptop,Electronics,1,87793,10,79013.7,12034.37,2025-10-20,Cash,Zoya
+C0377,Zain,Male,39,Quetta,Headphones,Accessories,3,4751,10,12827.7,3108.57,2026-02-13,JazzCash,Zoya
+C0378,Zain,Male,26,Hyderabad,Printer,Office,5,22818,15,96976.5,10186.51,2025-06-10,Cash,Usman
+C0379,Hamza,Male,22,Faisalabad,Monitor,Electronics,1,26695,0,26695,3090.16,2026-03-16,Bank Transfer,Nida
+C0380,Hina,Male,54,Peshawar,Printer,Office,4,23581,10,84891.6,8002.89,2025-06-10,JazzCash,Nida
+C0381,Zain,Female,29,Peshawar,Monitor,Electronics,2,26726,15,45434.2,10679.28,2026-06-22,JazzCash,Nida
+C0382,Hassan Ali,Female,38,Quetta,Mouse,Accessories,4,1362,0,5448,861.42,2025-08-19,Cash,Aamir
+C0383,Ahmed Raza,Male,20,Islamabad,Monitor,Electronics,5,29805,10,134122.5,15550.71,2025-09-07,EasyPaisa,Saad
+C0384,Ahmed Raza,Female,48,Hyderabad,Headphones,Accessories,4,5011,0,20044,3227.1,2025-08-16,Cash,Aamir
+C0385,Zain,Female,22,Rawalpindi,Headphones,Accessories,5,5285,5,25103.75,3828.46,2025-09-23,JazzCash,Usman
+C0386,Usman,Male,31,Faisalabad,Monitor,Electronics,4,30739,0,122956,11624.09,2026-01-24,Card,Zoya
+C0387,Bilal,Male,23,Faisalabad,Mouse,Accessories,1,1607,5,1526.65,273.96,2026-01-17,Card,Aamir
+C0388,Hamza,Male,55,Rawalpindi,Keyboard,Accessories,3,3510,10,9477,2290.88,2025-09-10,Card,Saad
+C0389,Hamza,Male,44,Rawalpindi,Headphones,Accessories,1,4991,15,4242.35,537.44,2026-05-20,JazzCash,Aamir
+C0390,Ayesha Khan,Male,57,Hyderabad,Monitor,Electronics,4,28226,10,101613.6,23038.53,2026-01-30,Bank Transfer,Zoya
+C0391,Ahmed Raza,Male,43,Peshawar,Monitor,Electronics,1,27881,10,25092.9,3466.35,2025-08-27,Cash,Usman
+C0392,Ahmed Raza,Female,25,Peshawar,Mouse,Accessories,2,1478,0,2956,648.98,2025-03-15,Bank Transfer,Saad
+C0393,Bilal,Female,44,Hyderabad,Laptop,Electronics,5,83640,0,418200,73210.66,2026-03-18,EasyPaisa,Aamir
+C0394,Zain,Male,45,Hyderabad,Printer,Office,5,25390,15,107907.5,16416.29,2025-07-08,Bank Transfer,Nida
+C0395,Hassan Ali,Female,61,Faisalabad,Monitor,Electronics,5,25600,15,108800,18543.25,2025-05-27,Cash,Nida
+C0396,Hassan Ali,Male,24,Lahore,Laptop,Electronics,1,92372,5,87753.4,13027.4,2025-06-17,Cash,Saad
+C0397,Zain,Male,48,Karachi,Mouse,Accessories,3,1470,5,4189.5,361.87,2025-06-12,Bank Transfer,Aamir
+C0398,Hina,Male,59,Islamabad,Headphones,Accessories,5,4588,5,21793,4085.25,2025-09-22,EasyPaisa,Zoya
+C0399,Hamza,Female,44,Faisalabad,Mouse,Accessories,1,1431,10,1287.9,250.05,2026-04-13,EasyPaisa,Aamir
+C0400,Maryam,Female,36,Islamabad,Monitor,Electronics,1,27709,15,23552.65,4438.11,2025-01-07,Cash,Zoya
+C0401,Hamza,Male,47,Quetta,Printer,Office,3,24750,0,74250,7367.83,2026-03-19,Card,Usman
+C0402,Bilal,Female,57,Lahore,Keyboard,Accessories,3,3696,15,9424.8,2245.78,2026-06-23,JazzCash,Saad
+C0403,Fatima Noor,Male,42,Karachi,Keyboard,Accessories,3,3544,10,9568.8,1527.86,2026-03-17,JazzCash,Nida
+C0404,Ali Khan,Male,43,Lahore,Laptop,Electronics,3,79631,15,203059.05,21489.66,2025-10-06,Bank Transfer,Zoya
+C0405,Sara Ahmed,Female,62,Karachi,Laptop,Electronics,4,84244,5,320127.2,53955.57,2025-04-29,JazzCash,Zoya
+C0406,Fatima Noor,Male,51,Faisalabad,Headphones,Accessories,2,5033,15,8556.1,860.8,2026-03-19,Bank Transfer,Saad
+C0407,Hamza,Male,37,Lahore,Headphones,Accessories,1,5164,5,4905.8,799.75,2025-04-25,EasyPaisa,Saad
+C0408,Hassan Ali,Female,44,Faisalabad,Headphones,Accessories,2,5425,5,10307.5,1172.14,2025-09-24,Card,Nida
+C0409,Bilal,Male,41,Quetta,Keyboard,Accessories,1,3541,10,3186.9,642.22,2025-02-25,Card,Nida
+C0410,Hassan Ali,Female,38,Peshawar,Keyboard,Accessories,4,3222,15,10954.8,2666.56,2025-07-02,EasyPaisa,Aamir
+C0411,Ayesha Khan,Female,26,Hyderabad,Printer,Office,4,22096,15,75126.4,11786.02,2025-11-09,EasyPaisa,Saad
+C0412,Fatima Noor,Female,23,Peshawar,Printer,Office,3,23528,15,59996.4,11851.69,2025-05-04,EasyPaisa,Usman
+C0413,Maryam,Female,60,Hyderabad,Headphones,Accessories,4,4563,15,15514.2,3110.79,2025-03-17,EasyPaisa,Usman
+C0414,Maryam,Male,46,Faisalabad,Headphones,Accessories,4,5405,10,19458,3274.49,2025-01-21,EasyPaisa,Nida
+C0415,Hina,Male,46,Islamabad,Laptop,Electronics,2,88169,5,167521.1,24413.72,2025-06-16,Cash,Saad
+C0416,Usman,Male,45,Quetta,Mouse,Accessories,2,1351,15,2296.7,398.57,2025-04-17,JazzCash,Aamir
+C0417,Hassan Ali,Female,19,Faisalabad,Headphones,Accessories,4,4591,0,18364,4478.46,2026-06-10,EasyPaisa,Aamir
+C0418,Ali Khan,Male,60,Lahore,Headphones,Accessories,4,5033,10,18118.8,4210.28,2025-10-06,EasyPaisa,Usman
+C0419,Fatima Noor,Male,33,Lahore,Mouse,Accessories,1,1579,15,1342.15,179.5,2025-11-17,JazzCash,Zoya
+C0420,Ali Khan,Male,25,Rawalpindi,Laptop,Electronics,3,90255,0,270765,50067.57,2025-04-15,JazzCash,Zoya
+C0421,Maryam,Female,35,Rawalpindi,Keyboard,Accessories,4,3696,5,14044.8,1690.95,2025-03-07,Cash,Nida
+C0422,Usman,Male,58,Lahore,Mouse,Accessories,5,1389,5,6597.75,546.68,2026-05-22,Card,Aamir
+C0423,Usman,Female,33,Rawalpindi,Mouse,Accessories,4,1398,15,4753.2,769.97,2026-01-24,Card,Saad
+C0424,Sara Ahmed,Female,60,Faisalabad,Monitor,Electronics,4,29167,5,110834.6,26205.78,2025-08-14,Bank Transfer,Aamir
+C0425,Ayesha Khan,Female,37,Karachi,Keyboard,Accessories,2,3604,15,6126.8,1372.18,2025-02-02,Cash,Zoya
+C0426,Fatima Noor,Female,45,Quetta,Headphones,Accessories,5,4801,10,21604.5,1792.55,2025-08-27,Bank Transfer,Saad
+C0427,Fatima Noor,Male,24,Quetta,Headphones,Accessories,5,5314,10,23913,3801.69,2025-03-31,Bank Transfer,Usman
+C0428,Ahmed Raza,Male,46,Faisalabad,Printer,Office,5,24408,10,109836,24959.54,2025-12-19,JazzCash,Zoya
+C0429,Ahmed Raza,Male,55,Islamabad,Keyboard,Accessories,1,3802,10,3421.8,745.72,2025-04-24,EasyPaisa,Zoya
+C0430,Maryam,Female,39,Peshawar,Mouse,Accessories,1,1383,5,1313.85,165.9,2025-11-30,Card,Zoya
+C0431,Hamza,Female,34,Faisalabad,Headphones,Accessories,4,5374,0,21496,4526.59,2025-02-13,Card,Zoya
+C0432,Fatima Noor,Male,37,Faisalabad,Keyboard,Accessories,4,3485,5,13243,2118.01,2025-11-07,JazzCash,Saad
+C0433,Bilal,Male,33,Lahore,Mouse,Accessories,2,1441,0,2882,517.77,2025-12-07,Cash,Usman
+C0434,Ayesha Khan,Male,50,Hyderabad,Keyboard,Accessories,5,3698,10,16641,2769.71,2026-02-22,EasyPaisa,Aamir
+C0435,Ayesha Khan,Male,38,Rawalpindi,Laptop,Electronics,4,80665,0,322660,63482.41,2026-01-07,JazzCash,Nida
+C0436,Ahmed Raza,Female,64,Quetta,Keyboard,Accessories,1,3366,0,3366,664.32,2026-03-11,Bank Transfer,Usman
+C0437,Hassan Ali,Female,37,Rawalpindi,Headphones,Accessories,5,5425,15,23056.25,4503.19,2026-01-30,JazzCash,Nida
+C0438,Usman,Female,37,Hyderabad,Keyboard,Accessories,2,3752,0,7504,1639.96,2025-07-03,EasyPaisa,Nida
+C0439,Hamza,Female,22,Karachi,Keyboard,Accessories,3,3177,10,8577.9,2134.06,2025-05-18,JazzCash,Zoya
+C0440,Fatima Noor,Female,20,Quetta,Laptop,Electronics,2,92492,5,175734.8,15010.73,2026-05-20,Card,Usman
+C0441,Usman,Female,61,Hyderabad,Printer,Office,4,24019,5,91272.2,14011.76,2025-11-03,Cash,Nida
+C0442,Hassan Ali,Female,22,Islamabad,Laptop,Electronics,5,90427,5,429528.25,88709.15,2025-08-20,Cash,Nida
+C0443,Ali Khan,Female,55,Rawalpindi,Printer,Office,1,23763,0,23763,3611.49,2025-10-25,JazzCash,Usman
+C0444,Ali Khan,Male,34,Rawalpindi,Keyboard,Accessories,5,3165,0,15825,2178.34,2026-04-03,EasyPaisa,Nida
+C0445,Maryam,Female,27,Faisalabad,Monitor,Electronics,5,27717,15,117797.25,13396.3,2026-04-14,Card,Nida
+C0446,Hina,Female,62,Faisalabad,Keyboard,Accessories,1,3762,10,3385.8,413.36,2025-09-13,EasyPaisa,Usman
+C0447,Maryam,Male,33,Karachi,Laptop,Electronics,2,80570,0,161140,24857.57,2025-03-15,Bank Transfer,Saad
+C0448,Maryam,Female,43,Faisalabad,Keyboard,Accessories,5,3561,15,15134.25,3658.2,2025-07-26,Bank Transfer,Nida
+C0449,Zain,Male,26,Faisalabad,Monitor,Electronics,1,29628,0,29628,3011.02,2025-06-20,Bank Transfer,Usman
+C0450,Maryam,Male,44,Peshawar,Headphones,Accessories,2,5008,5,9515.2,934.37,2025-10-09,Bank Transfer,Usman
+C0451,Sara Ahmed,Male,43,Lahore,Mouse,Accessories,2,1546,0,3092,583.01,2025-11-02,Cash,Saad
+C0452,Maryam,Male,38,Rawalpindi,Mouse,Accessories,3,1508,15,3845.4,329.48,2026-01-05,Card,Saad
+C0453,Hamza,Male,65,Faisalabad,Mouse,Accessories,3,1526,15,3891.3,539.15,2025-04-19,JazzCash,Usman
+C0454,Hamza,Male,55,Faisalabad,Monitor,Electronics,4,25601,0,102404,25080.97,2025-11-25,Bank Transfer,Saad
+C0455,Ayesha Khan,Female,42,Peshawar,Monitor,Electronics,5,30185,15,128286.25,15711.28,2025-02-07,JazzCash,Usman
+C0456,Ali Khan,Male,40,Peshawar,Keyboard,Accessories,4,3654,0,14616,1741.75,2026-05-01,Cash,Aamir
+C0457,Maryam,Female,46,Faisalabad,Printer,Office,2,24786,0,49572,4380.93,2026-03-29,EasyPaisa,Nida
+C0458,Bilal,Male,33,Quetta,Printer,Office,1,25371,5,24102.45,5942.22,2025-04-18,Cash,Zoya
+C0459,Ayesha Khan,Female,56,Karachi,Monitor,Electronics,1,30589,15,26000.65,2584.47,2026-02-11,Cash,Usman
+C0460,Maryam,Male,36,Lahore,Mouse,Accessories,2,1552,5,2948.8,262.6,2025-01-12,EasyPaisa,Zoya
+C0461,Usman,Female,62,Islamabad,Monitor,Electronics,2,25442,0,50884,11216.42,2025-11-20,JazzCash,Saad
+C0462,Ayesha Khan,Female,61,Rawalpindi,Mouse,Accessories,3,1511,5,4306.35,610.73,2026-02-12,JazzCash,Aamir
+C0463,Bilal,Female,39,Islamabad,Monitor,Electronics,3,26509,0,79527,6998.88,2025-02-26,EasyPaisa,Aamir
+C0464,Hassan Ali,Female,21,Peshawar,Keyboard,Accessories,5,3285,15,13961.25,1524.34,2026-03-14,JazzCash,Aamir
+C0465,Hassan Ali,Female,49,Rawalpindi,Headphones,Accessories,1,4686,0,4686,816.94,2025-05-21,Cash,Aamir
+C0466,Hamza,Male,44,Rawalpindi,Keyboard,Accessories,1,3376,0,3376,525.26,2025-08-20,Card,Nida
+C0467,Hassan Ali,Male,26,Quetta,Mouse,Accessories,5,1451,15,6166.75,859.21,2025-03-24,JazzCash,Nida
+C0468,Hina,Female,61,Quetta,Mouse,Accessories,3,1583,10,4274.1,466.11,2025-02-08,Card,Usman
+C0469,Bilal,Female,59,Faisalabad,Printer,Office,3,22579,5,64350.15,6805.6,2025-09-20,EasyPaisa,Nida
+C0470,Hassan Ali,Male,23,Karachi,Printer,Office,5,26184,5,124374,23417.61,2025-06-29,Bank Transfer,Usman
+C0471,Fatima Noor,Female,29,Rawalpindi,Laptop,Electronics,1,84368,10,75931.2,13932.14,2025-04-07,Cash,Aamir
+C0472,Bilal,Male,56,Karachi,Printer,Office,2,23832,10,42897.6,8985.99,2025-09-28,EasyPaisa,Zoya
+C0473,Maryam,Male,31,Quetta,Headphones,Accessories,3,5078,0,15234,3262.15,2026-04-02,Card,Aamir
+C0474,Bilal,Female,62,Quetta,Headphones,Accessories,1,4844,0,4844,626.68,2025-08-17,Bank Transfer,Usman
+C0475,Hina,Male,63,Peshawar,Laptop,Electronics,2,86524,10,155743.2,23051.42,2026-01-29,Bank Transfer,Nida
+C0476,Hina,Male,51,Faisalabad,Keyboard,Accessories,4,3645,0,14580,3390.35,2025-11-19,JazzCash,Aamir
+C0477,Usman,Female,33,Islamabad,Laptop,Electronics,5,77455,0,387275,93438.32,2025-09-13,EasyPaisa,Saad
+C0478,Maryam,Female,20,Faisalabad,Keyboard,Accessories,1,3763,10,3386.7,524.37,2025-06-29,Bank Transfer,Saad
+C0479,Zain,Female,41,Peshawar,Monitor,Electronics,4,25561,10,92019.6,16645.84,2025-04-02,JazzCash,Zoya
+C0480,Hina,Male,37,Faisalabad,Mouse,Accessories,5,1570,10,7065,1342.39,2025-05-16,Cash,Usman
+C0481,Hassan Ali,Female,37,Hyderabad,Headphones,Accessories,2,5054,5,9602.6,1802.7,2026-05-08,Card,Saad
+C0482,Bilal,Male,42,Quetta,Keyboard,Accessories,2,3550,5,6745,1667.78,2026-02-28,Cash,Usman
+C0483,Ahmed Raza,Female,30,Islamabad,Headphones,Accessories,5,5377,10,24196.5,5526.26,2026-04-21,JazzCash,Aamir
+C0484,Maryam,Female,36,Karachi,Mouse,Accessories,4,1598,15,5433.2,1345.96,2025-08-02,EasyPaisa,Nida
+C0485,Hassan Ali,Male,62,Rawalpindi,Printer,Office,3,21984,10,59356.8,5553.66,2026-07-03,EasyPaisa,Nida
+C0486,Usman,Female,32,Islamabad,Headphones,Accessories,5,5246,0,26230,3209.39,2025-01-12,Bank Transfer,Aamir
+C0487,Hina,Female,35,Lahore,Keyboard,Accessories,1,3516,5,3340.2,749.34,2025-10-17,Bank Transfer,Saad
+C0488,Fatima Noor,Male,20,Islamabad,Mouse,Accessories,4,1498,10,5392.8,842.62,2025-05-31,Cash,Nida
+C0489,Bilal,Female,19,Faisalabad,Mouse,Accessories,2,1432,15,2434.4,324.56,2026-04-03,Bank Transfer,Zoya
+C0490,Hina,Male,47,Quetta,Mouse,Accessories,2,1480,0,2960,447.29,2026-01-17,Card,Zoya
+C0491,Ayesha Khan,Female,18,Islamabad,Monitor,Electronics,5,30445,10,137002.5,25745.75,2025-12-26,EasyPaisa,Zoya
+C0492,Hina,Female,18,Peshawar,Mouse,Accessories,5,1604,15,6817,1479.15,2025-07-13,JazzCash,Usman
+C0493,Hassan Ali,Male,31,Lahore,Keyboard,Accessories,4,3636,15,12362.4,2592.24,2025-06-04,Card,Saad
+C0494,Hamza,Male,49,Quetta,Monitor,Electronics,1,29893,15,25409.05,4790.97,2026-01-13,Card,Usman
+C0495,Hina,Female,45,Karachi,Keyboard,Accessories,3,3495,0,10485,1683.56,2025-07-28,Bank Transfer,Usman
+C0496,Ahmed Raza,Female,39,Quetta,Keyboard,Accessories,3,3767,5,10735.95,2170.67,2026-06-29,Cash,Nida
+C0497,Ahmed Raza,Female,50,Hyderabad,Headphones,Accessories,2,5376,5,10214.4,2171.55,2025-01-25,JazzCash,Aamir
+C0498,Sara Ahmed,Male,63,Rawalpindi,Printer,Office,4,21942,10,78991.2,10459.32,2025-06-03,JazzCash,Nida
+C0499,Hina,Male,21,Islamabad,Headphones,Accessories,3,4878,5,13902.3,3217.63,2026-06-08,Card,Zoya
+C0500,Maryam,Male,43,Karachi,Headphones,Accessories,3,4937,15,12589.35,3109.71,2026-04-06,EasyPaisa,Nida
+C0501,Sara Ahmed,Male,39,Karachi,Monitor,Electronics,5,27053,10,121738.5,30051.42,2025-06-25,Bank Transfer,Aamir
+C0502,Fatima Noor,Female,46,Quetta,Headphones,Accessories,1,4755,10,4279.5,888.96,2026-01-05,JazzCash,Saad
+C0503,Sara Ahmed,Female,25,Rawalpindi,Mouse,Accessories,5,1634,15,6944.5,948.05,2025-10-13,Bank Transfer,Usman
+C0504,Hassan Ali,Male,18,Faisalabad,Keyboard,Accessories,2,3429,10,6172.2,1085.49,2025-06-02,Bank Transfer,Usman
+C0505,Fatima Noor,Female,54,Hyderabad,Headphones,Accessories,5,4858,10,21861,5447.74,2026-02-25,JazzCash,Nida
+C0506,Fatima Noor,Male,35,Faisalabad,Printer,Office,3,24698,15,62979.9,10593.82,2025-11-07,JazzCash,Nida
+C0507,Hassan Ali,Female,18,Karachi,Mouse,Accessories,4,1598,10,5752.8,1174.9,2025-07-16,Card,Saad
+C0508,Bilal,Female,60,Faisalabad,Printer,Office,5,23406,5,111178.5,18365.28,2025-12-04,Bank Transfer,Aamir
+C0509,Usman,Female,54,Hyderabad,Laptop,Electronics,5,86023,0,430115,88346.29,2025-04-02,EasyPaisa,Aamir
+C0510,Hina,Male,32,Faisalabad,Keyboard,Accessories,4,3745,5,14231,1828.77,2025-11-30,JazzCash,Usman
+C0511,Ayesha Khan,Male,26,Rawalpindi,Keyboard,Accessories,4,3701,5,14063.8,2441.19,2026-03-17,Cash,Nida
+C0512,Hina,Female,48,Faisalabad,Monitor,Electronics,5,25603,15,108812.75,20376.32,2026-06-02,Card,Saad
+C0513,Zain,Male,18,Karachi,Headphones,Accessories,3,4861,5,13853.85,1650.79,2025-07-04,JazzCash,Nida
+C0514,Zain,Female,30,Karachi,Headphones,Accessories,5,4854,15,20629.5,4694,2026-02-27,JazzCash,Zoya
+C0515,Hina,Male,24,Peshawar,Mouse,Accessories,5,1597,0,7985,1529.74,2025-09-27,EasyPaisa,Usman
+C0516,Maryam,Female,53,Faisalabad,Headphones,Accessories,2,4618,0,9236,2205.14,2025-07-20,EasyPaisa,Nida
+C0517,Usman,Male,59,Islamabad,Headphones,Accessories,4,5176,5,19668.8,3809.93,2026-04-19,EasyPaisa,Nida
+C0518,Bilal,Male,53,Islamabad,Monitor,Electronics,1,28600,5,27170,2598.91,2025-08-19,Card,Aamir
+C0519,Zain,Female,60,Faisalabad,Monitor,Electronics,5,28215,15,119913.75,20766.81,2025-07-30,Cash,Nida
+C0520,Bilal,Female,39,Lahore,Printer,Office,2,21818,5,41454.2,3329.81,2026-02-24,Bank Transfer,Nida
+C0521,Ahmed Raza,Male,28,Faisalabad,Keyboard,Accessories,5,3730,15,15852.5,3293,2025-02-14,JazzCash,Saad
+C0522,Fatima Noor,Female,22,Karachi,Keyboard,Accessories,5,3383,5,16069.25,3378.21,2025-11-01,Card,Aamir
+C0523,Fatima Noor,Female,32,Rawalpindi,Monitor,Electronics,5,29827,15,126764.75,23472.68,2026-04-22,Card,Nida
+C0524,Fatima Noor,Male,36,Karachi,Keyboard,Accessories,1,3572,5,3393.4,456.94,2026-01-02,Bank Transfer,Zoya
+C0525,Ali Khan,Male,44,Quetta,Monitor,Electronics,1,27904,0,27904,4538.73,2026-06-23,JazzCash,Aamir
+C0526,Hamza,Female,44,Rawalpindi,Keyboard,Accessories,4,3694,15,12559.6,2883.44,2025-07-10,EasyPaisa,Zoya
+C0527,Maryam,Female,57,Quetta,Headphones,Accessories,5,4826,0,24130,2959.72,2025-10-27,EasyPaisa,Zoya
+C0528,Usman,Female,48,Islamabad,Printer,Office,2,23842,0,47684,6474.98,2025-09-14,Bank Transfer,Saad
+C0529,Hamza,Male,27,Peshawar,Laptop,Electronics,2,86180,10,155124,35999.27,2026-06-20,Card,Zoya
+C0530,Zain,Male,24,Quetta,Laptop,Electronics,4,79287,10,285433.2,62054.5,2025-11-22,Card,Nida
+C0531,Sara Ahmed,Male,42,Quetta,Headphones,Accessories,1,4501,10,4050.9,777.03,2025-07-08,EasyPaisa,Zoya
+C0532,Fatima Noor,Male,63,Rawalpindi,Laptop,Electronics,1,88026,5,83624.7,20377.31,2025-11-25,Bank Transfer,Aamir
+C0533,Bilal,Male,35,Lahore,Monitor,Electronics,2,27563,10,49613.4,5114.08,2025-09-12,Cash,Saad
+C0534,Fatima Noor,Male,41,Quetta,Monitor,Electronics,4,28284,10,101822.4,15719.37,2026-06-14,Cash,Aamir
+C0535,Ali Khan,Male,34,Karachi,Monitor,Electronics,3,26315,10,71050.5,16194.94,2025-02-02,JazzCash,Saad
+C0536,Ayesha Khan,Female,45,Lahore,Printer,Office,4,25423,15,86438.2,14101.52,2025-06-29,JazzCash,Saad
+C0537,Ahmed Raza,Female,51,Lahore,Monitor,Electronics,1,27200,0,27200,6530.94,2025-02-09,JazzCash,Nida
+C0538,Maryam,Female,23,Peshawar,Printer,Office,2,21716,15,36917.2,7509.43,2025-10-12,EasyPaisa,Usman
+C0539,Hina,Male,38,Faisalabad,Keyboard,Accessories,1,3207,5,3046.65,307.9,2025-09-12,EasyPaisa,Saad
+C0540,Hamza,Male,36,Islamabad,Headphones,Accessories,2,5321,0,10642,1535.06,2025-03-25,Cash,Usman
+C0541,Maryam,Female,65,Rawalpindi,Laptop,Electronics,3,85761,0,257283,48356.32,2025-12-04,Card,Saad
+C0542,Usman,Female,25,Faisalabad,Laptop,Electronics,1,89525,15,76096.25,16408.81,2026-02-01,EasyPaisa,Usman
+C0543,Usman,Female,44,Islamabad,Laptop,Electronics,1,81193,15,69014.05,6895.79,2025-09-01,EasyPaisa,Zoya
+C0544,Ayesha Khan,Male,53,Hyderabad,Headphones,Accessories,3,4988,15,12719.4,2278.71,2026-06-16,JazzCash,Usman
+C0545,Ali Khan,Male,21,Hyderabad,Headphones,Accessories,2,4506,0,9012,1445.15,2026-01-18,JazzCash,Usman
+C0546,Ali Khan,Male,62,Karachi,Monitor,Electronics,5,26805,0,134025,32857.38,2025-04-24,Card,Nida
+C0547,Bilal,Male,62,Lahore,Printer,Office,1,23707,5,22521.65,2273.53,2025-01-02,Cash,Aamir
+C0548,Fatima Noor,Male,22,Islamabad,Printer,Office,4,25300,15,86020,21218.17,2025-06-28,EasyPaisa,Aamir
+C0549,Bilal,Male,27,Quetta,Keyboard,Accessories,2,3682,0,7364,795.38,2025-06-12,Bank Transfer,Nida
+C0550,Fatima Noor,Male,37,Hyderabad,Headphones,Accessories,4,4546,15,15456.4,1888.35,2026-03-14,EasyPaisa,Saad
+C0551,Ahmed Raza,Female,33,Rawalpindi,Mouse,Accessories,4,1390,0,5560,492.16,2025-06-07,EasyPaisa,Usman
+C0552,Fatima Noor,Female,46,Rawalpindi,Monitor,Electronics,5,28786,0,143930,12964.13,2026-01-26,EasyPaisa,Usman
+C0553,Hassan Ali,Female,20,Rawalpindi,Monitor,Electronics,1,26961,5,25612.95,2754.47,2025-05-19,Bank Transfer,Aamir
+C0554,Zain,Male,65,Karachi,Keyboard,Accessories,5,3320,5,15770,3689.27,2025-05-12,JazzCash,Saad
+C0555,Ali Khan,Female,33,Rawalpindi,Printer,Office,4,23209,15,78910.6,14613.01,2026-02-22,JazzCash,Saad
+C0556,Hamza,Male,65,Faisalabad,Mouse,Accessories,3,1539,10,4155.3,731.77,2025-01-13,Card,Nida
+C0557,Ahmed Raza,Female,28,Faisalabad,Headphones,Accessories,4,4569,5,17362.2,2283.64,2025-08-23,Cash,Zoya
+C0558,Hina,Female,48,Peshawar,Headphones,Accessories,2,5251,0,10502,1713.88,2025-06-08,JazzCash,Usman
+C0559,Fatima Noor,Male,29,Islamabad,Monitor,Electronics,2,30173,5,57328.7,6861.61,2025-04-18,JazzCash,Usman
+C0560,Maryam,Male,51,Faisalabad,Headphones,Accessories,1,5001,10,4500.9,936.19,2025-05-31,Cash,Zoya
+C0561,Bilal,Female,37,Lahore,Mouse,Accessories,1,1426,5,1354.7,266.11,2025-03-06,EasyPaisa,Zoya
+C0562,Bilal,Female,31,Quetta,Mouse,Accessories,3,1417,5,4038.45,819.59,2025-08-15,Bank Transfer,Saad
+C0563,Ahmed Raza,Male,19,Quetta,Laptop,Electronics,2,93113,0,186226,34326.52,2025-05-06,JazzCash,Aamir
+C0564,Usman,Female,29,Karachi,Headphones,Accessories,1,4867,0,4867,1069.39,2026-03-13,JazzCash,Usman
+C0565,Hina,Female,56,Quetta,Headphones,Accessories,3,5240,5,14934,1309.55,2025-01-30,Bank Transfer,Zoya
+C0566,Ali Khan,Female,21,Karachi,Laptop,Electronics,3,77545,15,197739.75,46818.03,2025-02-20,Bank Transfer,Saad
+C0567,Maryam,Female,54,Faisalabad,Laptop,Electronics,5,88765,15,377251.25,30894.91,2026-05-11,EasyPaisa,Saad
+C0568,Hassan Ali,Male,61,Hyderabad,Keyboard,Accessories,4,3336,10,12009.6,2135.37,2025-11-22,Card,Aamir
+C0569,Hamza,Female,52,Peshawar,Printer,Office,2,23356,15,39705.2,6533.36,2025-12-18,Cash,Usman
+C0570,Maryam,Female,42,Rawalpindi,Headphones,Accessories,3,5076,0,15228,1303.26,2025-03-12,EasyPaisa,Aamir
+C0571,Hina,Female,44,Karachi,Headphones,Accessories,4,5182,15,17618.8,2984.07,2025-12-03,JazzCash,Aamir
+C0572,Ahmed Raza,Female,53,Peshawar,Monitor,Electronics,3,26595,10,71806.5,9977.8,2025-01-30,JazzCash,Nida
+C0573,Ayesha Khan,Male,52,Quetta,Mouse,Accessories,4,1407,15,4783.8,1065.19,2025-01-04,JazzCash,Saad
+C0574,Maryam,Male,18,Karachi,Laptop,Electronics,3,86143,10,232586.1,21853.1,2025-09-18,Cash,Zoya
+C0575,Zain,Female,26,Peshawar,Headphones,Accessories,3,5051,10,13637.7,2385.96,2026-04-04,Cash,Usman
+C0576,Ali Khan,Female,18,Lahore,Laptop,Electronics,5,92338,0,461690,65126.56,2026-04-19,EasyPaisa,Saad
+C0577,Ahmed Raza,Male,25,Peshawar,Mouse,Accessories,5,1416,15,6018,776.42,2025-09-27,Bank Transfer,Zoya
+C0578,Hassan Ali,Female,39,Rawalpindi,Keyboard,Accessories,3,3581,5,10205.85,1189.58,2025-10-18,Card,Nida
+C0579,Bilal,Male,40,Lahore,Mouse,Accessories,5,1495,15,6353.75,1248.59,2025-05-06,EasyPaisa,Nida
+C0580,Maryam,Male,32,Hyderabad,Mouse,Accessories,1,1426,10,1283.4,129.27,2025-11-20,Bank Transfer,Zoya
+C0581,Maryam,Female,58,Rawalpindi,Keyboard,Accessories,3,3391,0,10173,2310.68,2026-06-11,Cash,Aamir
+C0582,Hamza,Male,20,Karachi,Printer,Office,4,22169,15,75374.6,8106.02,2025-05-18,Cash,Usman
+C0583,Ayesha Khan,Male,19,Karachi,Keyboard,Accessories,1,3467,0,3467,300.12,2026-05-02,Cash,Saad
+C0584,Maryam,Male,63,Hyderabad,Printer,Office,4,24675,0,98700,23891.9,2025-01-18,EasyPaisa,Zoya
+C0585,Sara Ahmed,Female,34,Faisalabad,Monitor,Electronics,1,25323,15,21524.55,4739.37,2025-11-09,Bank Transfer,Zoya
+C0586,Hamza,Female,25,Hyderabad,Keyboard,Accessories,2,3434,10,6181.2,1423.66,2025-10-08,EasyPaisa,Saad
+C0587,Hamza,Male,18,Islamabad,Monitor,Electronics,4,27812,10,100123.2,14740.57,2025-06-28,Cash,Aamir
+C0588,Maryam,Male,45,Peshawar,Keyboard,Accessories,4,3432,10,12355.2,1886.62,2026-03-16,Card,Usman
+C0589,Ahmed Raza,Male,38,Rawalpindi,Printer,Office,1,23879,15,20297.15,2586.42,2025-10-02,Cash,Usman
+C0590,Ahmed Raza,Female,49,Peshawar,Laptop,Electronics,2,92420,5,175598,20970.32,2025-03-23,Card,Usman
+C0591,Ahmed Raza,Female,52,Karachi,Mouse,Accessories,4,1554,10,5594.4,1140.22,2025-05-11,Card,Zoya
+C0592,Zain,Female,51,Peshawar,Mouse,Accessories,5,1437,15,6107.25,1404.65,2025-11-21,JazzCash,Usman
+C0593,Maryam,Male,21,Faisalabad,Headphones,Accessories,2,4538,5,8622.2,1209.93,2025-09-28,EasyPaisa,Saad
+C0594,Ali Khan,Male,19,Rawalpindi,Keyboard,Accessories,2,3316,0,6632,831.93,2025-10-29,Bank Transfer,Zoya
+C0595,Hamza,Female,29,Lahore,Headphones,Accessories,2,4646,5,8827.4,1203.48,2025-07-04,Bank Transfer,Usman
+C0596,Bilal,Male,33,Islamabad,Keyboard,Accessories,2,3795,5,7210.5,1412.59,2026-05-23,Card,Usman
+C0597,Usman,Male,60,Quetta,Printer,Office,3,25408,5,72412.8,11467.29,2026-02-06,Card,Zoya
+C0598,Hamza,Female,62,Lahore,Laptop,Electronics,2,80134,0,160268,26470.66,2026-06-21,Cash,Aamir
+C0599,Bilal,Male,22,Peshawar,Monitor,Electronics,3,29230,10,78921,11420.54,2025-01-07,Card,Usman
+C0600,Zain,Male,47,Faisalabad,Printer,Office,2,26194,10,47149.2,10435.86,2025-02-04,Cash,Zoya
+C0601,Fatima Noor,Female,56,Islamabad,Monitor,Electronics,2,28481,5,54113.9,4438.4,2025-03-08,EasyPaisa,Usman
+C0602,Hina,Male,60,Rawalpindi,Mouse,Accessories,3,1499,5,4272.15,799.57,2026-05-23,Bank Transfer,Nida
+C0603,Zain,Female,31,Karachi,Laptop,Electronics,3,80044,10,216118.8,47456.07,2025-02-14,JazzCash,Usman
+C0604,Maryam,Male,42,Faisalabad,Headphones,Accessories,4,4830,5,18354,3585.34,2025-07-29,Cash,Usman
+C0605,Ayesha Khan,Male,65,Quetta,Monitor,Electronics,4,30575,10,110070,25872.87,2025-06-06,Bank Transfer,Zoya
+C0606,Sara Ahmed,Male,26,Peshawar,Headphones,Accessories,1,5233,15,4448.05,1016.46,2025-02-08,Card,Aamir
+C0607,Maryam,Male,50,Rawalpindi,Headphones,Accessories,3,5344,15,13627.2,2190.57,2026-01-09,Bank Transfer,Zoya
+C0608,Fatima Noor,Female,45,Islamabad,Printer,Office,2,25010,10,45018,4343.88,2025-01-03,Card,Usman
+C0609,Usman,Male,29,Faisalabad,Laptop,Electronics,2,89807,10,161652.6,19435.77,2026-01-09,Bank Transfer,Nida
+C0610,Maryam,Male,19,Karachi,Headphones,Accessories,2,4716,15,8017.2,1976.89,2025-05-13,Cash,Usman
+C0611,Maryam,Female,32,Faisalabad,Printer,Office,5,21619,5,102690.25,25630.08,2025-05-28,Bank Transfer,Zoya
+C0612,Zain,Female,33,Lahore,Keyboard,Accessories,2,3295,5,6260.5,558.14,2025-08-08,JazzCash,Saad
+C0613,Sara Ahmed,Male,38,Islamabad,Laptop,Electronics,4,80414,5,305573.2,53388.61,2025-08-10,Bank Transfer,Usman
+C0614,Hina,Female,51,Lahore,Monitor,Electronics,1,27584,0,27584,5071.98,2025-10-05,Cash,Saad
+C0615,Maryam,Female,27,Faisalabad,Headphones,Accessories,5,5352,5,25422,5596.21,2025-02-06,Bank Transfer,Zoya
+C0616,Fatima Noor,Male,51,Islamabad,Mouse,Accessories,5,1468,10,6606,1467.73,2025-05-22,EasyPaisa,Saad
+C0617,Maryam,Male,37,Rawalpindi,Keyboard,Accessories,3,3788,5,10795.8,1170.8,2025-12-14,Card,Zoya
+C0618,Ahmed Raza,Female,38,Lahore,Headphones,Accessories,4,5207,10,18745.2,4376.48,2026-03-08,EasyPaisa,Usman
+C0619,Bilal,Male,65,Karachi,Laptop,Electronics,1,78957,15,67113.45,16022.98,2025-10-02,EasyPaisa,Aamir
+C0620,Hamza,Male,51,Quetta,Printer,Office,3,25601,0,76803,7355.93,2025-05-23,Card,Usman
+C0621,Hina,Male,23,Peshawar,Keyboard,Accessories,1,3798,15,3228.3,794.94,2026-04-06,Cash,Nida
+C0622,Ayesha Khan,Male,31,Karachi,Mouse,Accessories,5,1430,15,6077.5,1492.95,2026-05-06,Cash,Zoya
+C0623,Zain,Female,35,Rawalpindi,Mouse,Accessories,2,1494,15,2539.8,365.03,2025-04-19,Cash,Saad
+C0624,Hina,Male,33,Faisalabad,Printer,Office,4,24803,15,84330.2,20243.03,2025-02-23,EasyPaisa,Nida
+C0625,Fatima Noor,Male,29,Karachi,Headphones,Accessories,1,4611,10,4149.9,756.41,2025-10-21,JazzCash,Zoya
+C0626,Sara Ahmed,Female,61,Rawalpindi,Headphones,Accessories,1,4501,0,4501,1049.67,2025-11-04,JazzCash,Saad
+C0627,Bilal,Male,32,Hyderabad,Monitor,Electronics,3,28019,0,84057,7220.79,2025-02-05,Card,Nida
+C0628,Ahmed Raza,Female,53,Karachi,Monitor,Electronics,3,26947,0,80841,9920.79,2025-01-10,Bank Transfer,Saad
+C0629,Bilal,Female,48,Faisalabad,Mouse,Accessories,1,1482,0,1482,280.54,2025-02-10,JazzCash,Aamir
+C0630,Hassan Ali,Male,30,Quetta,Laptop,Electronics,1,90603,10,81542.7,14090.15,2025-11-01,EasyPaisa,Saad
+C0631,Ayesha Khan,Male,20,Peshawar,Mouse,Accessories,5,1417,15,6022.25,599.74,2026-02-22,JazzCash,Zoya
+C0632,Fatima Noor,Male,22,Lahore,Mouse,Accessories,4,1449,10,5216.4,979.69,2026-06-05,Cash,Nida
+C0633,Hina,Male,50,Peshawar,Printer,Office,4,21700,10,78120,9044.91,2025-05-01,Cash,Zoya
+C0634,Maryam,Female,26,Karachi,Printer,Office,3,22786,15,58104.3,12850.16,2025-09-25,Cash,Aamir
+C0635,Hina,Male,48,Karachi,Laptop,Electronics,1,78304,10,70473.6,12551.81,2026-05-10,JazzCash,Zoya
+C0636,Zain,Male,53,Rawalpindi,Laptop,Electronics,5,80821,15,343489.25,55118.2,2026-01-05,JazzCash,Usman
+C0637,Fatima Noor,Male,51,Rawalpindi,Keyboard,Accessories,2,3526,15,5994.2,932.4,2026-02-28,Cash,Zoya
+C0638,Maryam,Male,31,Quetta,Printer,Office,3,22127,5,63061.95,8359.09,2025-06-05,Bank Transfer,Zoya
+C0639,Sara Ahmed,Female,32,Peshawar,Headphones,Accessories,3,5403,0,16209,2031.58,2026-06-24,Card,Zoya
+C0640,Hassan Ali,Female,52,Lahore,Keyboard,Accessories,3,3478,5,9912.3,1815.45,2026-05-08,EasyPaisa,Aamir
+C0641,Ahmed Raza,Female,47,Hyderabad,Printer,Office,3,22599,15,57627.45,9245.58,2026-04-17,Card,Saad
+C0642,Ayesha Khan,Female,29,Islamabad,Printer,Office,1,22306,5,21190.7,4468.67,2025-04-20,Cash,Zoya
+C0643,Usman,Male,31,Faisalabad,Mouse,Accessories,1,1567,0,1567,269.86,2026-03-31,Card,Nida
+C0644,Hina,Female,46,Islamabad,Monitor,Electronics,5,28662,10,128979,21312.69,2026-06-04,JazzCash,Saad
+C0645,Hassan Ali,Female,56,Hyderabad,Laptop,Electronics,2,85000,10,153000,30511.05,2025-04-21,JazzCash,Zoya
+C0646,Fatima Noor,Male,64,Quetta,Monitor,Electronics,3,27134,5,77331.9,8488.86,2026-06-17,Bank Transfer,Aamir
+C0647,Ahmed Raza,Female,42,Karachi,Monitor,Electronics,2,25951,5,49306.9,9424.08,2025-08-30,Cash,Nida
+C0648,Ali Khan,Female,33,Karachi,Keyboard,Accessories,2,3351,5,6366.9,1148.05,2025-07-12,Cash,Nida
+C0649,Ahmed Raza,Male,49,Quetta,Headphones,Accessories,4,4525,15,15385,2039.61,2025-12-20,Bank Transfer,Aamir
+C0650,Ahmed Raza,Male,47,Karachi,Headphones,Accessories,1,5044,0,5044,747.47,2026-06-11,JazzCash,Nida
+C0651,Maryam,Male,21,Peshawar,Mouse,Accessories,1,1622,0,1622,190.39,2025-06-28,Bank Transfer,Usman
+C0652,Sara Ahmed,Male,45,Lahore,Keyboard,Accessories,1,3544,15,3012.4,312.88,2026-03-25,JazzCash,Usman
+C0653,Ahmed Raza,Male,62,Peshawar,Keyboard,Accessories,1,3181,15,2703.85,571.72,2025-11-20,Cash,Usman
+C0654,Sara Ahmed,Male,32,Hyderabad,Keyboard,Accessories,1,3319,0,3319,557.38,2025-02-20,EasyPaisa,Aamir
+C0655,Zain,Female,59,Karachi,Monitor,Electronics,2,25941,5,49287.9,6525.51,2025-05-17,Cash,Usman
+C0656,Bilal,Female,53,Rawalpindi,Monitor,Electronics,1,28561,0,28561,5275.93,2025-12-08,Bank Transfer,Saad
+C0657,Hina,Male,62,Hyderabad,Keyboard,Accessories,2,3722,10,6699.6,1641.67,2025-12-14,JazzCash,Nida
+C0658,Hina,Male,23,Lahore,Printer,Office,5,26190,5,124402.5,13903.88,2026-02-12,Card,Usman
+C0659,Usman,Female,32,Karachi,Keyboard,Accessories,1,3791,0,3791,632.69,2026-05-21,JazzCash,Nida
+C0660,Hina,Male,33,Peshawar,Headphones,Accessories,5,5249,0,26245,4529.66,2025-12-27,JazzCash,Usman
+C0661,Hassan Ali,Female,31,Rawalpindi,Laptop,Electronics,1,92230,10,83007,9734.76,2026-05-18,JazzCash,Aamir
+C0662,Ayesha Khan,Female,40,Lahore,Laptop,Electronics,1,91726,15,77967.1,14239.6,2025-03-31,JazzCash,Usman
+C0663,Fatima Noor,Male,56,Islamabad,Printer,Office,3,23893,5,68095.05,9979.11,2025-08-16,Cash,Aamir
+C0664,Hina,Female,40,Hyderabad,Monitor,Electronics,2,26542,10,47775.6,6318.86,2026-03-21,Card,Usman
+C0665,Fatima Noor,Male,61,Peshawar,Mouse,Accessories,4,1643,15,5586.2,694.5,2025-03-18,JazzCash,Aamir
+C0666,Fatima Noor,Male,31,Peshawar,Mouse,Accessories,3,1487,10,4014.9,323.49,2025-08-03,JazzCash,Zoya
+C0667,Sara Ahmed,Male,33,Quetta,Monitor,Electronics,4,29876,0,119504,11356.78,2025-01-15,EasyPaisa,Saad
+C0668,Zain,Female,45,Peshawar,Mouse,Accessories,1,1541,10,1386.9,245.76,2025-09-06,EasyPaisa,Aamir
+C0669,Zain,Male,39,Quetta,Laptop,Electronics,4,84427,0,337708,38869.97,2025-06-12,Card,Zoya
+C0670,Ahmed Raza,Female,23,Islamabad,Mouse,Accessories,3,1479,0,4437,1036.14,2026-04-07,JazzCash,Zoya
+C0671,Ahmed Raza,Female,48,Peshawar,Headphones,Accessories,4,4763,5,18099.4,3039.95,2025-09-05,Bank Transfer,Saad
+C0672,Sara Ahmed,Female,33,Peshawar,Keyboard,Accessories,4,3780,10,13608,1757.19,2025-01-19,Cash,Zoya
+C0673,Hassan Ali,Female,44,Karachi,Headphones,Accessories,3,4722,10,12749.4,2631.82,2025-05-15,Cash,Aamir
+C0674,Hina,Female,31,Lahore,Keyboard,Accessories,5,3790,10,17055,1720.5,2025-07-25,Bank Transfer,Saad
+C0675,Hina,Female,48,Islamabad,Mouse,Accessories,3,1519,0,4557,619.28,2025-10-30,EasyPaisa,Nida
+C0676,Maryam,Female,28,Rawalpindi,Headphones,Accessories,1,4602,15,3911.7,676.11,2026-06-10,Cash,Nida
+C0677,Hassan Ali,Male,42,Hyderabad,Laptop,Electronics,2,89066,5,169225.4,22941.63,2025-08-23,Card,Saad
+C0678,Hassan Ali,Female,59,Islamabad,Headphones,Accessories,2,5461,5,10375.9,2202.97,2025-04-15,Cash,Saad
+C0679,Hina,Male,56,Lahore,Printer,Office,2,23576,15,40079.2,6287.63,2025-02-17,EasyPaisa,Zoya
+C0680,Zain,Male,53,Quetta,Mouse,Accessories,4,1382,15,4698.8,500.7,2025-04-02,EasyPaisa,Saad
+C0681,Sara Ahmed,Female,60,Islamabad,Keyboard,Accessories,4,3560,15,12104,1139.01,2025-03-14,EasyPaisa,Zoya
+C0682,Ali Khan,Male,48,Quetta,Printer,Office,2,22282,5,42335.8,8174.47,2025-02-16,EasyPaisa,Saad
+C0683,Hamza,Female,53,Islamabad,Printer,Office,4,22984,15,78145.6,13830.54,2026-05-08,Bank Transfer,Nida
+C0684,Hamza,Female,34,Rawalpindi,Mouse,Accessories,2,1562,15,2655.4,315.1,2026-01-18,Bank Transfer,Aamir
+C0685,Ahmed Raza,Female,28,Peshawar,Printer,Office,2,23622,0,47244,9750.16,2025-11-29,Cash,Aamir
+C0686,Ayesha Khan,Female,51,Faisalabad,Laptop,Electronics,1,78892,15,67058.2,9472.16,2026-02-02,Cash,Aamir
+C0687,Maryam,Female,52,Lahore,Printer,Office,5,22373,0,111865,20697.21,2025-04-24,JazzCash,Nida
+C0688,Hamza,Male,21,Lahore,Keyboard,Accessories,5,3566,5,16938.5,2693.94,2026-05-09,Card,Saad
+C0689,Usman,Female,59,Rawalpindi,Keyboard,Accessories,4,3233,0,12932,2036.7,2026-04-07,JazzCash,Nida
+C0690,Sara Ahmed,Male,25,Peshawar,Monitor,Electronics,5,26465,15,112476.25,22231.6,2025-08-27,EasyPaisa,Saad
+C0691,Ahmed Raza,Male,32,Faisalabad,Monitor,Electronics,5,29662,15,126063.5,25028.89,2025-11-17,JazzCash,Usman
+C0692,Ayesha Khan,Female,62,Rawalpindi,Keyboard,Accessories,5,3206,15,13625.5,1929.33,2025-06-03,Card,Zoya
+C0693,Fatima Noor,Male,37,Rawalpindi,Monitor,Electronics,5,29542,15,125553.5,20684.71,2025-08-05,JazzCash,Saad
+C0694,Ali Khan,Female,29,Islamabad,Keyboard,Accessories,3,3222,10,8699.4,1474.58,2025-09-25,JazzCash,Zoya
+C0695,Usman,Female,22,Rawalpindi,Laptop,Electronics,3,85834,5,244626.9,54468.91,2025-06-23,JazzCash,Aamir
+C0696,Hina,Female,31,Hyderabad,Keyboard,Accessories,2,3380,15,5746,562.8,2025-06-15,Card,Aamir
+C0697,Hassan Ali,Female,24,Lahore,Laptop,Electronics,5,87982,0,439910,39340.11,2026-04-06,JazzCash,Usman
+C0698,Bilal,Male,39,Lahore,Headphones,Accessories,1,5351,15,4548.35,591.93,2025-01-18,JazzCash,Zoya
+C0699,Ayesha Khan,Female,19,Hyderabad,Laptop,Electronics,2,81463,15,138487.1,19287.76,2026-02-12,EasyPaisa,Usman
+C0700,Hamza,Female,32,Faisalabad,Monitor,Electronics,5,27006,0,135030,19510.69,2025-07-02,Card,Saad
+C0701,Ahmed Raza,Female,46,Peshawar,Headphones,Accessories,1,5401,0,5401,1339.19,2025-01-09,Card,Saad
+C0702,Zain,Male,40,Rawalpindi,Headphones,Accessories,3,5015,10,13540.5,1591.75,2025-06-05,JazzCash,Usman
+C0703,Hina,Female,29,Islamabad,Keyboard,Accessories,3,3738,0,11214,2400.63,2026-01-03,JazzCash,Aamir
+C0704,Hassan Ali,Female,40,Rawalpindi,Monitor,Electronics,2,27385,5,52031.5,12489,2026-03-05,Cash,Zoya
+C0705,Ayesha Khan,Male,58,Faisalabad,Headphones,Accessories,5,5060,5,24035,4398.08,2026-06-18,JazzCash,Aamir
+C0706,Fatima Noor,Female,21,Karachi,Monitor,Electronics,1,27135,15,23064.75,2306.73,2025-07-24,EasyPaisa,Nida
+C0707,Usman,Male,60,Rawalpindi,Printer,Office,3,22467,15,57290.85,10789.9,2025-09-03,EasyPaisa,Aamir
+C0708,Fatima Noor,Female,33,Lahore,Mouse,Accessories,1,1605,10,1444.5,231.02,2025-08-16,Card,Usman
+C0709,Maryam,Male,46,Rawalpindi,Laptop,Electronics,2,90277,10,162498.6,29972.55,2025-12-28,JazzCash,Usman
+C0710,Bilal,Male,18,Faisalabad,Laptop,Electronics,5,88843,15,377582.75,62838.78,2026-04-05,JazzCash,Usman
+C0711,Ali Khan,Female,41,Quetta,Printer,Office,3,24004,15,61210.2,11125.84,2026-02-01,EasyPaisa,Zoya
+C0712,Sara Ahmed,Female,19,Hyderabad,Keyboard,Accessories,2,3220,15,5474,970.41,2026-06-25,Card,Nida
+C0713,Hina,Female,54,Islamabad,Laptop,Electronics,3,78809,10,212784.3,37108.43,2025-11-18,EasyPaisa,Zoya
+C0714,Ali Khan,Female,48,Hyderabad,Headphones,Accessories,3,5246,5,14951.1,3417.12,2026-03-27,Bank Transfer,Saad
+C0715,Fatima Noor,Male,60,Hyderabad,Monitor,Electronics,3,27436,5,78192.6,13613.04,2025-02-02,Card,Zoya
+C0716,Ayesha Khan,Male,37,Karachi,Laptop,Electronics,3,92585,10,249979.5,48306.6,2026-06-05,Card,Saad
+C0717,Bilal,Male,63,Rawalpindi,Headphones,Accessories,3,4542,0,13626,2219.53,2026-05-09,Bank Transfer,Zoya
+C0718,Ali Khan,Male,44,Lahore,Headphones,Accessories,1,5261,0,5261,751.29,2025-03-13,Card,Usman
+C0719,Fatima Noor,Male,50,Lahore,Laptop,Electronics,1,88950,15,75607.5,9318.79,2025-02-20,Card,Aamir
+C0720,Ali Khan,Female,57,Faisalabad,Laptop,Electronics,2,86798,5,164916.2,14719.17,2025-01-21,Cash,Zoya
+C0721,Zain,Male,31,Faisalabad,Printer,Office,4,24721,10,88995.6,18976.56,2025-03-22,EasyPaisa,Aamir
+C0722,Ahmed Raza,Female,60,Peshawar,Headphones,Accessories,5,4611,5,21902.25,3296.38,2025-10-17,JazzCash,Zoya
+C0723,Bilal,Male,23,Karachi,Laptop,Electronics,5,80518,15,342201.5,63090.12,2025-01-30,Card,Usman
+C0724,Hamza,Female,23,Peshawar,Monitor,Electronics,5,28873,5,137146.75,11110.37,2025-03-29,Bank Transfer,Nida
+C0725,Fatima Noor,Male,18,Rawalpindi,Headphones,Accessories,1,5271,10,4743.9,730.1,2025-05-21,EasyPaisa,Zoya
+C0726,Zain,Male,36,Rawalpindi,Headphones,Accessories,5,4502,5,21384.5,3525.11,2025-05-07,EasyPaisa,Nida
+C0727,Maryam,Male,56,Rawalpindi,Laptop,Electronics,2,77038,15,130964.6,32441.71,2025-07-17,EasyPaisa,Usman
+C0728,Ali Khan,Male,28,Karachi,Mouse,Accessories,3,1622,15,4136.1,867.24,2025-02-18,Card,Saad
+C0729,Hamza,Male,65,Karachi,Headphones,Accessories,4,4579,15,15568.6,2137.71,2026-04-14,Bank Transfer,Zoya
+C0730,Hamza,Female,31,Peshawar,Mouse,Accessories,5,1472,10,6624,1297.1,2026-07-04,Card,Saad
+C0731,Bilal,Male,23,Quetta,Headphones,Accessories,5,5254,0,26270,6036.17,2025-10-16,Card,Usman
+C0732,Ali Khan,Female,27,Islamabad,Monitor,Electronics,5,27917,5,132605.75,28237.99,2025-10-27,Bank Transfer,Nida
+C0733,Hamza,Male,41,Karachi,Printer,Office,5,26304,5,124944,23213.98,2025-06-25,Card,Zoya
+C0734,Zain,Male,51,Karachi,Keyboard,Accessories,5,3792,15,16116,2008.15,2025-12-25,Cash,Aamir
+C0735,Zain,Female,41,Peshawar,Printer,Office,4,26249,5,99746.2,23899.42,2026-02-27,Card,Saad
+C0736,Ayesha Khan,Female,34,Lahore,Headphones,Accessories,2,5074,15,8625.8,1763.13,2026-04-29,Bank Transfer,Usman
+C0737,Hina,Male,28,Rawalpindi,Mouse,Accessories,1,1450,10,1305,244.47,2026-01-30,Bank Transfer,Nida
+C0738,Hina,Female,55,Islamabad,Headphones,Accessories,3,4555,0,13665,2965.63,2025-09-19,JazzCash,Saad
+C0739,Bilal,Female,35,Quetta,Headphones,Accessories,4,4722,15,16054.8,1978.89,2025-04-17,JazzCash,Usman
+C0740,Bilal,Female,63,Rawalpindi,Mouse,Accessories,5,1544,0,7720,1159.89,2025-04-11,Card,Zoya
+C0741,Hamza,Female,31,Quetta,Printer,Office,1,26320,5,25004,6164.36,2025-03-15,Bank Transfer,Aamir
+C0742,Sara Ahmed,Male,22,Karachi,Printer,Office,2,23617,10,42510.6,7121.32,2025-09-24,EasyPaisa,Saad
+C0743,Ali Khan,Male,57,Peshawar,Laptop,Electronics,1,80320,5,76304,18045.69,2026-06-28,Card,Usman
+C0744,Hamza,Female,58,Faisalabad,Headphones,Accessories,1,4510,15,3833.5,557.99,2025-09-14,EasyPaisa,Usman
+C0745,Zain,Male,49,Lahore,Headphones,Accessories,1,5259,0,5259,1157.53,2025-09-12,Bank Transfer,Usman
+C0746,Zain,Female,53,Faisalabad,Keyboard,Accessories,1,3254,15,2765.9,589.38,2026-06-05,Bank Transfer,Saad
+C0747,Hamza,Female,37,Peshawar,Headphones,Accessories,3,4781,10,12908.7,1866.4,2026-04-19,Cash,Nida
+C0748,Zain,Male,34,Rawalpindi,Keyboard,Accessories,4,3317,0,13268,2195.36,2025-02-15,Bank Transfer,Zoya
+C0749,Ali Khan,Male,44,Islamabad,Printer,Office,3,25948,10,70059.6,16021.67,2025-08-04,Bank Transfer,Zoya
+C0750,Hamza,Male,58,Karachi,Printer,Office,5,23426,5,111273.5,16466.87,2026-05-29,EasyPaisa,Usman
+C0751,Hassan Ali,Male,25,Karachi,Laptop,Electronics,4,83728,10,301420.8,47207.53,2025-06-10,Bank Transfer,Aamir
+C0752,Maryam,Male,37,Hyderabad,Printer,Office,4,25093,5,95353.4,23275.49,2025-08-02,Card,Zoya
+C0753,Bilal,Male,32,Islamabad,Printer,Office,3,26296,0,78888,10946.95,2025-07-02,Bank Transfer,Usman
+C0754,Ahmed Raza,Female,64,Islamabad,Keyboard,Accessories,2,3254,5,6182.6,1302.57,2025-08-18,EasyPaisa,Aamir
+C0755,Hina,Female,19,Quetta,Mouse,Accessories,4,1566,0,6264,553.46,2025-03-25,Bank Transfer,Zoya
+C0756,Ali Khan,Female,55,Hyderabad,Monitor,Electronics,5,27828,5,132183,26369.92,2025-05-02,Bank Transfer,Saad
+C0757,Hassan Ali,Male,54,Hyderabad,Keyboard,Accessories,1,3657,5,3474.15,586.75,2026-01-08,JazzCash,Saad
+C0758,Hamza,Male,63,Faisalabad,Keyboard,Accessories,4,3353,5,12741.4,2352.67,2026-01-25,Card,Usman
+C0759,Usman,Female,35,Peshawar,Printer,Office,4,24660,0,98640,21882.8,2026-01-12,Cash,Aamir
+C0760,Fatima Noor,Female,26,Karachi,Monitor,Electronics,4,27724,0,110896,10962.67,2025-04-20,Bank Transfer,Aamir
+C0761,Fatima Noor,Female,28,Rawalpindi,Monitor,Electronics,3,30367,10,81990.9,12587.19,2025-01-02,Card,Saad
+C0762,Fatima Noor,Female,25,Peshawar,Printer,Office,1,22088,5,20983.6,3935.22,2025-07-14,Cash,Usman
+C0763,Ayesha Khan,Female,55,Peshawar,Laptop,Electronics,3,93356,15,238057.8,50706.5,2025-01-14,JazzCash,Aamir
+C0764,Fatima Noor,Male,34,Quetta,Keyboard,Accessories,2,3298,10,5936.4,1332.93,2026-04-04,EasyPaisa,Zoya
+C0765,Sara Ahmed,Female,36,Islamabad,Keyboard,Accessories,4,3799,10,13676.4,1300.87,2025-12-23,Bank Transfer,Nida
+C0766,Ahmed Raza,Male,42,Lahore,Printer,Office,3,24631,15,62809.05,6262.71,2025-09-19,Bank Transfer,Aamir
+C0767,Ayesha Khan,Male,30,Rawalpindi,Laptop,Electronics,3,79408,5,226312.8,53974.45,2025-03-25,JazzCash,Usman
+C0768,Hassan Ali,Female,25,Islamabad,Printer,Office,2,25369,15,43127.3,10143.83,2025-02-21,JazzCash,Usman
+C0769,Sara Ahmed,Male,43,Karachi,Mouse,Accessories,5,1520,10,6840,1447.54,2026-04-13,Bank Transfer,Usman
+C0770,Fatima Noor,Female,54,Quetta,Mouse,Accessories,3,1571,5,4477.35,935.52,2025-02-26,Card,Zoya
+C0771,Ayesha Khan,Male,44,Karachi,Laptop,Electronics,1,87455,0,87455,7166.16,2026-03-09,Bank Transfer,Saad
+C0772,Ali Khan,Male,46,Hyderabad,Monitor,Electronics,5,29202,5,138709.5,31956.96,2025-07-14,EasyPaisa,Nida
+C0773,Usman,Female,54,Islamabad,Headphones,Accessories,1,4560,10,4104,915.56,2025-03-31,Card,Saad
+C0774,Ahmed Raza,Female,29,Quetta,Keyboard,Accessories,2,3536,10,6364.8,1150.68,2025-08-31,Card,Zoya
+C0775,Bilal,Male,38,Hyderabad,Mouse,Accessories,1,1477,15,1255.45,105.13,2026-04-10,Bank Transfer,Usman
+C0776,Maryam,Male,31,Quetta,Mouse,Accessories,1,1502,0,1502,282.39,2025-12-27,JazzCash,Zoya
+C0777,Hina,Female,27,Quetta,Laptop,Electronics,1,80235,0,80235,18790.74,2025-11-24,Bank Transfer,Usman
+C0778,Ayesha Khan,Female,57,Islamabad,Printer,Office,4,23952,15,81436.8,6832.83,2025-03-21,EasyPaisa,Nida
+C0779,Hina,Male,60,Quetta,Keyboard,Accessories,1,3425,5,3253.75,276.71,2025-02-09,Cash,Aamir
+C0780,Usman,Female,62,Quetta,Laptop,Electronics,2,90669,5,172271.1,22123.36,2025-03-08,Cash,Zoya
+C0781,Ali Khan,Female,26,Rawalpindi,Laptop,Electronics,5,83252,0,416260,79137.56,2025-05-03,Cash,Saad
+C0782,Hamza,Male,33,Faisalabad,Printer,Office,2,23448,10,42206.4,8182.86,2025-08-22,Bank Transfer,Aamir
+C0783,Maryam,Male,55,Islamabad,Keyboard,Accessories,1,3271,5,3107.45,260.94,2025-10-23,Bank Transfer,Usman
+C0784,Zain,Male,59,Islamabad,Monitor,Electronics,4,27910,0,111640,10657.63,2025-09-11,JazzCash,Aamir
+C0785,Ahmed Raza,Male,57,Peshawar,Laptop,Electronics,1,79085,15,67222.25,16082.45,2025-11-07,Bank Transfer,Saad
+C0786,Maryam,Female,45,Faisalabad,Monitor,Electronics,3,27150,15,69232.5,7467.68,2025-04-30,JazzCash,Usman
+C0787,Zain,Female,51,Faisalabad,Mouse,Accessories,4,1455,0,5820,1382,2026-06-07,JazzCash,Usman
+C0788,Usman,Female,45,Lahore,Printer,Office,1,23105,5,21949.75,2088.21,2025-09-21,Cash,Usman
+C0789,Zain,Male,40,Hyderabad,Printer,Office,1,23294,0,23294,3460.18,2025-11-03,Card,Saad
+C0790,Ahmed Raza,Male,43,Karachi,Keyboard,Accessories,5,3547,0,17735,3238.87,2025-04-26,Card,Usman
+C0791,Sara Ahmed,Male,24,Islamabad,Laptop,Electronics,1,78058,10,70252.2,16743.73,2026-04-11,JazzCash,Zoya
+C0792,Fatima Noor,Male,19,Faisalabad,Monitor,Electronics,3,29307,15,74732.85,12953.95,2025-07-07,Cash,Aamir
+C0793,Zain,Female,53,Peshawar,Keyboard,Accessories,1,3692,0,3692,350.44,2026-05-01,Card,Usman
+C0794,Sara Ahmed,Male,21,Islamabad,Laptop,Electronics,3,93490,0,280470,26526.38,2026-03-16,Cash,Nida
+C0795,Hassan Ali,Female,45,Lahore,Mouse,Accessories,1,1419,0,1419,279.08,2025-05-31,Bank Transfer,Usman
+C0796,Ali Khan,Female,35,Islamabad,Mouse,Accessories,5,1569,5,7452.75,1062.4,2025-04-19,EasyPaisa,Zoya
+C0797,Hina,Female,31,Faisalabad,Monitor,Electronics,4,30727,0,122908,28323.22,2026-04-29,EasyPaisa,Nida
+C0798,Hina,Female,35,Lahore,Monitor,Electronics,3,29375,5,83718.75,18381.6,2026-01-28,Cash,Saad
+C0799,Ayesha Khan,Male,38,Faisalabad,Keyboard,Accessories,4,3247,0,12988,1962.74,2025-10-09,EasyPaisa,Aamir
+C0800,Ayesha Khan,Female,60,Rawalpindi,Laptop,Electronics,3,91494,10,247033.8,23903.11,2025-01-30,Bank Transfer,Nida
+C0801,Maryam,Male,18,Peshawar,Printer,Office,3,26343,5,75077.55,11186.92,2025-04-13,Card,Aamir
+C0802,Usman,Male,31,Faisalabad,Monitor,Electronics,3,28309,15,72187.95,8473.76,2025-12-01,Card,Nida
+C0803,Hassan Ali,Male,22,Islamabad,Mouse,Accessories,5,1371,0,6855,1255.48,2025-01-30,EasyPaisa,Usman
+C0804,Fatima Noor,Female,62,Hyderabad,Keyboard,Accessories,3,3595,0,10785,2465.77,2025-04-13,Cash,Aamir
+C0805,Zain,Female,22,Quetta,Laptop,Electronics,1,78667,10,70800.3,13510.71,2026-04-16,Bank Transfer,Aamir
+C0806,Ali Khan,Female,33,Peshawar,Mouse,Accessories,3,1502,5,4280.7,751.91,2026-07-01,Card,Zoya
+C0807,Zain,Male,49,Islamabad,Headphones,Accessories,4,5329,5,20250.2,2243.07,2025-08-04,Card,Aamir
+C0808,Fatima Noor,Male,59,Peshawar,Printer,Office,2,22799,10,41038.2,3584.02,2026-01-05,Card,Saad
+C0809,Ayesha Khan,Female,63,Lahore,Monitor,Electronics,5,27780,10,125010,16986.76,2025-04-27,EasyPaisa,Saad
+C0810,Hina,Male,21,Islamabad,Headphones,Accessories,5,4921,0,24605,2220.59,2025-07-21,Bank Transfer,Zoya
+C0811,Maryam,Female,23,Islamabad,Keyboard,Accessories,4,3849,5,14626.2,1316.15,2026-06-28,Bank Transfer,Saad
+C0812,Hina,Male,30,Lahore,Mouse,Accessories,2,1582,5,3005.8,474.15,2025-08-11,Bank Transfer,Usman
+C0813,Ali Khan,Male,54,Peshawar,Keyboard,Accessories,5,3565,5,16933.75,3468.01,2026-06-04,Card,Usman
+C0814,Ayesha Khan,Female,27,Faisalabad,Keyboard,Accessories,2,3489,10,6280.2,854.65,2026-01-21,Bank Transfer,Saad
+C0815,Ali Khan,Female,37,Faisalabad,Monitor,Electronics,4,28450,5,108110,10159.64,2025-06-17,Bank Transfer,Usman
+C0816,Hassan Ali,Female,51,Karachi,Laptop,Electronics,2,93333,15,158666.1,16537.73,2026-01-13,JazzCash,Zoya
+C0817,Ali Khan,Male,26,Islamabad,Laptop,Electronics,1,79539,15,67608.15,15873.16,2025-10-22,EasyPaisa,Saad
+C0818,Sara Ahmed,Female,29,Quetta,Laptop,Electronics,5,91117,5,432805.75,83858.38,2025-01-31,Cash,Saad
+C0819,Bilal,Male,42,Quetta,Laptop,Electronics,3,86393,0,259179,61296.62,2026-04-14,Cash,Saad
+C0820,Ahmed Raza,Female,47,Islamabad,Printer,Office,4,25227,5,95862.6,23158.62,2025-03-09,Bank Transfer,Aamir
+C0821,Ali Khan,Female,46,Rawalpindi,Mouse,Accessories,4,1510,5,5738,1105.76,2025-02-22,Card,Aamir
+C0822,Bilal,Male,54,Lahore,Monitor,Electronics,5,30712,10,138204,28111.91,2025-03-12,Cash,Nida
+C0823,Maryam,Male,26,Islamabad,Laptop,Electronics,4,87051,0,348204,42394.23,2025-01-24,JazzCash,Usman
+C0824,Maryam,Male,19,Karachi,Mouse,Accessories,3,1420,10,3834,374.14,2025-08-05,Card,Usman
+C0825,Hassan Ali,Female,19,Lahore,Laptop,Electronics,5,77326,0,386630,46657.31,2025-12-13,JazzCash,Zoya
+C0826,Maryam,Male,28,Rawalpindi,Printer,Office,2,25242,5,47959.8,11164.96,2025-07-02,JazzCash,Aamir
+C0827,Usman,Male,58,Quetta,Laptop,Electronics,3,85524,15,218086.2,19486.62,2025-02-09,Bank Transfer,Usman
+C0828,Ali Khan,Male,46,Karachi,Monitor,Electronics,1,25805,0,25805,2802.5,2025-09-24,JazzCash,Usman
+C0829,Usman,Female,53,Karachi,Laptop,Electronics,3,83917,10,226575.9,18147.56,2026-01-08,Cash,Zoya
+C0830,Zain,Male,23,Lahore,Mouse,Accessories,1,1393,5,1323.35,214.94,2025-06-18,Card,Aamir
+C0831,Fatima Noor,Female,34,Faisalabad,Monitor,Electronics,4,30755,5,116869,18140.33,2025-03-20,Card,Nida
+C0832,Sara Ahmed,Female,31,Islamabad,Laptop,Electronics,2,87516,0,175032,35357.9,2026-02-06,JazzCash,Usman
+C0833,Hina,Female,53,Islamabad,Headphones,Accessories,1,5290,15,4496.5,747.17,2026-03-19,Cash,Saad
+C0834,Bilal,Male,51,Lahore,Keyboard,Accessories,2,3217,15,5468.9,930.09,2026-04-20,EasyPaisa,Aamir
+C0835,Ali Khan,Female,38,Lahore,Printer,Office,5,25481,0,127405,31089.56,2026-02-24,Cash,Aamir
+C0836,Sara Ahmed,Male,56,Faisalabad,Laptop,Electronics,3,83332,15,212496.6,50541.57,2025-01-03,Cash,Aamir
+C0837,Hamza,Female,41,Karachi,Monitor,Electronics,5,29030,15,123377.5,28544.52,2025-07-02,Bank Transfer,Usman
+C0838,Hina,Female,57,Peshawar,Monitor,Electronics,4,28319,5,107612.2,23442.49,2026-04-01,JazzCash,Usman
+C0839,Fatima Noor,Female,48,Hyderabad,Laptop,Electronics,3,89864,10,242632.8,59638.12,2025-09-28,Bank Transfer,Saad
+C0840,Usman,Female,27,Peshawar,Keyboard,Accessories,1,3246,10,2921.4,422.85,2026-02-13,Cash,Aamir
+C0841,Hassan Ali,Female,35,Hyderabad,Monitor,Electronics,1,29393,0,29393,2748.35,2026-04-25,Bank Transfer,Saad
+C0842,Ali Khan,Male,54,Islamabad,Monitor,Electronics,2,28779,0,57558,10966.99,2026-05-12,JazzCash,Usman
+C0843,Maryam,Female,53,Islamabad,Monitor,Electronics,5,27173,5,129071.75,30587.54,2025-06-09,Card,Zoya
+C0844,Ayesha Khan,Male,55,Quetta,Mouse,Accessories,1,1515,10,1363.5,295.85,2026-02-01,EasyPaisa,Nida
+C0845,Maryam,Male,39,Peshawar,Monitor,Electronics,3,26271,15,66991.05,15089.54,2025-09-30,Cash,Saad
+C0846,Maryam,Female,19,Hyderabad,Mouse,Accessories,4,1407,0,5628,564.17,2025-02-12,EasyPaisa,Aamir
+C0847,Hina,Male,34,Islamabad,Printer,Office,5,24954,10,112293,13815,2025-04-01,Card,Usman
+C0848,Ayesha Khan,Male,26,Rawalpindi,Laptop,Electronics,5,91819,10,413185.5,33998.33,2025-06-05,Card,Aamir
+C0849,Ahmed Raza,Female,29,Peshawar,Laptop,Electronics,5,84428,5,401033,71621.35,2025-06-10,EasyPaisa,Aamir
+C0850,Bilal,Male,61,Karachi,Mouse,Accessories,5,1375,0,6875,1396.14,2025-07-27,Bank Transfer,Nida
+C0851,Fatima Noor,Male,57,Peshawar,Monitor,Electronics,4,26310,5,99978,14299.97,2025-11-04,Card,Aamir
+C0852,Hassan Ali,Female,50,Hyderabad,Headphones,Accessories,1,4888,5,4643.6,1014.15,2026-06-29,Card,Zoya
+C0853,Ahmed Raza,Male,18,Rawalpindi,Monitor,Electronics,5,29882,15,126998.5,15720.15,2026-01-18,Cash,Aamir
+C0854,Sara Ahmed,Female,27,Peshawar,Laptop,Electronics,2,85247,5,161969.3,14035.74,2025-02-21,Cash,Saad
+C0855,Zain,Female,28,Rawalpindi,Printer,Office,5,25494,5,121096.5,11944.55,2025-06-21,EasyPaisa,Zoya
+C0856,Fatima Noor,Female,25,Lahore,Mouse,Accessories,3,1508,5,4297.8,644.01,2025-07-21,Bank Transfer,Usman
+C0857,Sara Ahmed,Male,63,Karachi,Headphones,Accessories,1,4823,5,4581.85,485.56,2025-01-09,EasyPaisa,Saad
+C0858,Hassan Ali,Male,58,Faisalabad,Mouse,Accessories,4,1459,10,5252.4,1069.66,2025-11-29,Card,Saad
+C0859,Maryam,Female,37,Rawalpindi,Mouse,Accessories,5,1621,10,7294.5,1225.5,2026-03-30,Card,Zoya
+C0860,Usman,Female,53,Quetta,Laptop,Electronics,1,80169,0,80169,12071.18,2025-02-19,Cash,Aamir
+C0861,Zain,Male,37,Peshawar,Printer,Office,5,24834,0,124170,29663.76,2025-11-22,Card,Usman
+C0862,Maryam,Male,59,Quetta,Keyboard,Accessories,2,3501,15,5951.7,842.29,2026-06-12,Cash,Aamir
+C0863,Zain,Male,40,Peshawar,Headphones,Accessories,2,5427,15,9225.9,1546.12,2025-10-19,EasyPaisa,Saad
+C0864,Sara Ahmed,Female,45,Lahore,Mouse,Accessories,2,1450,5,2755,282.89,2026-02-10,Bank Transfer,Saad
+C0865,Hina,Male,46,Karachi,Monitor,Electronics,1,27644,0,27644,2510.11,2025-10-09,Card,Nida
+C0866,Ali Khan,Male,21,Islamabad,Laptop,Electronics,3,91239,5,260031.15,43956.51,2025-01-28,Cash,Zoya
+C0867,Hamza,Male,42,Lahore,Keyboard,Accessories,1,3235,5,3073.25,301.2,2025-09-08,Bank Transfer,Usman
+C0868,Hamza,Male,31,Quetta,Monitor,Electronics,1,27947,15,23754.95,4973.47,2025-05-05,JazzCash,Usman
+C0869,Ali Khan,Male,47,Hyderabad,Laptop,Electronics,1,89318,10,80386.2,11154.38,2025-09-24,Bank Transfer,Aamir
+C0870,Usman,Male,65,Peshawar,Mouse,Accessories,2,1498,0,2996,396.68,2025-07-09,Cash,Aamir
+C0871,Ahmed Raza,Female,21,Rawalpindi,Headphones,Accessories,3,5189,5,14788.65,3057.82,2025-09-30,Card,Nida
+C0872,Hamza,Male,64,Islamabad,Mouse,Accessories,3,1544,5,4400.4,907.09,2025-10-05,JazzCash,Saad
+C0873,Fatima Noor,Female,48,Faisalabad,Mouse,Accessories,4,1643,5,6243.4,1320.37,2026-03-19,Card,Zoya
+C0874,Ali Khan,Female,27,Hyderabad,Headphones,Accessories,3,4980,5,14193,2762.34,2026-05-16,EasyPaisa,Saad
+C0875,Usman,Male,32,Karachi,Mouse,Accessories,4,1444,0,5776,990.29,2026-03-04,Bank Transfer,Zoya
+C0876,Maryam,Male,59,Peshawar,Mouse,Accessories,1,1514,5,1438.3,336,2026-06-26,Cash,Nida
+C0877,Maryam,Female,27,Rawalpindi,Printer,Office,3,23535,10,63544.5,10009.59,2026-06-13,Bank Transfer,Aamir
+C0878,Ahmed Raza,Male,63,Rawalpindi,Laptop,Electronics,3,80326,10,216880.2,32201.29,2025-06-30,Bank Transfer,Nida
+C0879,Maryam,Male,57,Peshawar,Monitor,Electronics,5,25778,0,128890,15683.51,2025-08-11,Bank Transfer,Aamir
+C0880,Ayesha Khan,Female,32,Rawalpindi,Monitor,Electronics,3,28841,0,86523,9379.68,2026-02-22,EasyPaisa,Saad
+C0881,Fatima Noor,Female,39,Rawalpindi,Monitor,Electronics,4,25257,5,95976.6,16202.5,2025-09-07,JazzCash,Saad
+C0882,Fatima Noor,Male,61,Quetta,Monitor,Electronics,3,29780,15,75939,11054.79,2026-05-27,EasyPaisa,Usman
+C0883,Ahmed Raza,Male,59,Quetta,Monitor,Electronics,2,26229,5,49835.1,7647.31,2026-01-30,Card,Usman
+C0884,Ahmed Raza,Male,27,Peshawar,Headphones,Accessories,3,5220,15,13311,3181.48,2026-04-11,EasyPaisa,Nida
+C0885,Zain,Female,38,Peshawar,Mouse,Accessories,3,1612,5,4594.2,374.53,2025-08-24,JazzCash,Saad
+C0886,Fatima Noor,Male,20,Faisalabad,Printer,Office,3,25428,15,64841.4,5775.81,2025-02-28,JazzCash,Nida
+C0887,Bilal,Female,59,Peshawar,Mouse,Accessories,5,1541,10,6934.5,1614.27,2026-03-19,JazzCash,Saad
+C0888,Sara Ahmed,Female,61,Islamabad,Printer,Office,2,22695,15,38581.5,9482.57,2025-11-10,Card,Aamir
+C0889,Ahmed Raza,Female,37,Rawalpindi,Monitor,Electronics,5,29109,15,123713.25,22196.03,2025-05-12,EasyPaisa,Usman
+C0890,Usman,Female,31,Faisalabad,Headphones,Accessories,4,4648,0,18592,1923.53,2026-05-30,EasyPaisa,Nida
+C0891,Ali Khan,Female,50,Peshawar,Printer,Office,5,23407,0,117035,25558.81,2025-03-10,Bank Transfer,Usman
+C0892,Ali Khan,Female,26,Islamabad,Headphones,Accessories,5,4872,10,21924,5365.88,2025-09-01,JazzCash,Usman
+C0893,Ali Khan,Female,30,Islamabad,Printer,Office,1,22337,15,18986.45,2781.82,2025-11-21,Bank Transfer,Usman
+C0894,Ahmed Raza,Female,45,Islamabad,Mouse,Accessories,2,1404,15,2386.8,433.53,2025-04-18,Bank Transfer,Usman
+C0895,Ahmed Raza,Male,33,Hyderabad,Headphones,Accessories,1,4617,15,3924.45,950.7,2025-03-13,Bank Transfer,Nida
+C0896,Hina,Male,33,Faisalabad,Mouse,Accessories,4,1525,0,6100,968.43,2026-03-12,Bank Transfer,Aamir
+C0897,Ayesha Khan,Male,45,Quetta,Mouse,Accessories,3,1414,0,4242,341.48,2026-05-30,Card,Zoya
+C0898,Ayesha Khan,Male,63,Hyderabad,Headphones,Accessories,4,4696,0,18784,2788.74,2025-02-21,Card,Aamir
+C0899,Zain,Female,44,Faisalabad,Headphones,Accessories,5,5057,0,25285,4067.54,2026-01-31,JazzCash,Aamir
+C0900,Fatima Noor,Female,64,Lahore,Headphones,Accessories,5,5174,10,23283,3022.27,2026-05-10,EasyPaisa,Zoya
+C0901,Ali Khan,Male,51,Islamabad,Printer,Office,5,24784,10,111528,15325.34,2025-01-28,Cash,Saad
+C0902,Bilal,Female,47,Faisalabad,Headphones,Accessories,2,5114,0,10228,2535.26,2025-09-26,Card,Zoya
+C0903,Zain,Male,30,Islamabad,Headphones,Accessories,3,4528,5,12904.8,3128.1,2025-09-14,JazzCash,Aamir
+C0904,Usman,Female,61,Islamabad,Mouse,Accessories,3,1626,0,4878,756.82,2026-01-11,EasyPaisa,Usman
+C0905,Ahmed Raza,Male,47,Quetta,Monitor,Electronics,5,30700,5,145825,35110.24,2026-05-27,Cash,Zoya
+C0906,Ahmed Raza,Male,20,Hyderabad,Monitor,Electronics,4,28593,10,102934.8,17949.76,2025-09-09,JazzCash,Zoya
+C0907,Hamza,Female,61,Peshawar,Monitor,Electronics,5,29267,0,146335,15524.48,2025-09-25,Card,Saad
+C0908,Ali Khan,Male,35,Islamabad,Monitor,Electronics,1,27400,5,26030,5366.04,2025-10-26,Card,Aamir
+C0909,Zain,Female,36,Islamabad,Keyboard,Accessories,3,3319,0,9957,1834.22,2025-12-28,Cash,Usman
+C0910,Sara Ahmed,Male,53,Islamabad,Keyboard,Accessories,3,3265,15,8325.75,1639.53,2025-07-27,JazzCash,Zoya
+C0911,Bilal,Male,19,Quetta,Monitor,Electronics,4,26319,10,94748.4,17911.61,2025-10-23,EasyPaisa,Zoya
+C0912,Zain,Male,21,Islamabad,Laptop,Electronics,5,77723,10,349753.5,33566.78,2025-05-06,Bank Transfer,Zoya
+C0913,Ali Khan,Female,53,Peshawar,Headphones,Accessories,2,4958,5,9420.2,2299.8,2025-04-17,EasyPaisa,Aamir
+C0914,Ahmed Raza,Male,64,Islamabad,Headphones,Accessories,3,4731,5,13483.35,2595.83,2025-04-01,Cash,Zoya
+C0915,Fatima Noor,Male,65,Quetta,Laptop,Electronics,5,83959,5,398805.25,32554.72,2025-10-25,Card,Aamir
+C0916,Fatima Noor,Male,32,Hyderabad,Headphones,Accessories,3,4694,5,13377.9,3281.31,2025-04-23,Bank Transfer,Nida
+C0917,Hina,Male,61,Hyderabad,Laptop,Electronics,2,83131,15,141322.7,28506.7,2025-03-01,EasyPaisa,Zoya
+C0918,Fatima Noor,Female,24,Peshawar,Laptop,Electronics,5,84251,5,400192.25,72315.23,2025-12-21,EasyPaisa,Usman
+C0919,Hamza,Female,60,Faisalabad,Mouse,Accessories,4,1559,15,5300.6,812.82,2025-09-29,Bank Transfer,Saad
+C0920,Ali Khan,Female,53,Faisalabad,Headphones,Accessories,4,5337,0,21348,2476.85,2026-05-01,EasyPaisa,Aamir
+C0921,Sara Ahmed,Male,39,Peshawar,Laptop,Electronics,1,89180,15,75803,9351.99,2025-01-12,Card,Usman
+C0922,Sara Ahmed,Male,33,Rawalpindi,Laptop,Electronics,5,92038,0,460190,90404.26,2025-05-06,Cash,Usman
+C0923,Ali Khan,Female,33,Karachi,Mouse,Accessories,1,1566,0,1566,357.35,2025-04-05,Cash,Usman
+C0924,Fatima Noor,Male,18,Islamabad,Headphones,Accessories,3,4676,0,14028,1750.44,2025-10-09,Cash,Saad
+C0925,Maryam,Female,42,Hyderabad,Keyboard,Accessories,5,3176,5,15086,2893.33,2026-03-29,EasyPaisa,Zoya
+C0926,Zain,Female,18,Quetta,Mouse,Accessories,2,1403,0,2806,441.16,2026-06-05,Cash,Zoya
+C0927,Hamza,Male,45,Faisalabad,Printer,Office,4,21752,0,87008,19911.89,2026-06-29,Cash,Nida
+C0928,Ayesha Khan,Female,57,Lahore,Keyboard,Accessories,3,3673,10,9917.1,2408.99,2025-02-02,EasyPaisa,Usman
+C0929,Usman,Male,49,Faisalabad,Monitor,Electronics,2,26588,15,45199.6,9561.95,2026-02-17,Card,Nida
+C0930,Maryam,Female,59,Quetta,Printer,Office,4,22056,10,79401.6,12813.15,2025-05-02,JazzCash,Aamir
+C0931,Hina,Female,53,Rawalpindi,Headphones,Accessories,4,4676,10,16833.6,1713.75,2025-03-16,Card,Saad
+C0932,Bilal,Female,23,Islamabad,Mouse,Accessories,5,1597,10,7186.5,808.34,2025-02-20,EasyPaisa,Usman
+C0933,Hina,Female,46,Islamabad,Laptop,Electronics,5,86760,0,433800,103778.14,2025-01-26,Cash,Nida
+C0934,Bilal,Male,65,Islamabad,Laptop,Electronics,5,91365,10,411142.5,34613.27,2026-07-05,JazzCash,Aamir
+C0935,Hina,Male,34,Peshawar,Laptop,Electronics,3,92624,10,250084.8,36764.27,2025-10-07,Cash,Zoya
+C0936,Ayesha Khan,Female,58,Islamabad,Keyboard,Accessories,2,3735,5,7096.5,792.29,2026-04-20,Cash,Saad
+C0937,Fatima Noor,Male,37,Faisalabad,Monitor,Electronics,5,29918,5,142110.5,30929.94,2025-09-17,Cash,Zoya
+C0938,Fatima Noor,Male,18,Faisalabad,Monitor,Electronics,1,29814,15,25341.9,2801.32,2025-03-12,Bank Transfer,Aamir
+C0939,Hassan Ali,Female,51,Karachi,Keyboard,Accessories,1,3536,0,3536,808.97,2026-01-29,JazzCash,Zoya
+C0940,Ayesha Khan,Male,63,Faisalabad,Laptop,Electronics,3,79229,0,237687,38070.73,2026-03-02,EasyPaisa,Usman
+C0941,Ahmed Raza,Female,19,Karachi,Mouse,Accessories,5,1638,5,7780.5,710.13,2025-04-28,Card,Saad
+C0942,Ahmed Raza,Female,59,Rawalpindi,Monitor,Electronics,2,30648,10,55166.4,13570.32,2025-10-30,Cash,Nida
+C0943,Ayesha Khan,Male,40,Karachi,Headphones,Accessories,4,4803,10,17290.8,4311.7,2026-03-12,Cash,Aamir
+C0944,Bilal,Female,60,Peshawar,Printer,Office,1,22571,15,19185.35,2222.72,2025-10-28,EasyPaisa,Nida
+C0945,Hamza,Male,37,Lahore,Mouse,Accessories,1,1626,15,1382.1,123.95,2025-01-13,Bank Transfer,Usman
+C0946,Hina,Female,56,Rawalpindi,Laptop,Electronics,3,76989,15,196321.95,22230.96,2026-02-05,Bank Transfer,Zoya
+C0947,Fatima Noor,Female,57,Hyderabad,Printer,Office,3,21938,0,65814,16307.67,2025-05-20,Cash,Saad
+C0948,Maryam,Female,39,Quetta,Mouse,Accessories,1,1473,10,1325.7,311.67,2026-02-16,Cash,Zoya
+C0949,Maryam,Female,50,Islamabad,Headphones,Accessories,1,4810,15,4088.5,553.89,2026-04-27,Cash,Aamir
+C0950,Usman,Male,47,Faisalabad,Printer,Office,2,23429,15,39829.3,6221.11,2026-06-21,EasyPaisa,Aamir
+C0951,Maryam,Female,51,Faisalabad,Headphones,Accessories,5,5151,0,25755,4037.78,2025-10-04,JazzCash,Zoya
+C0952,Usman,Male,25,Islamabad,Headphones,Accessories,4,4926,15,16748.4,3546.31,2026-06-20,Cash,Zoya
+C0953,Bilal,Female,59,Lahore,Headphones,Accessories,5,4553,15,19350.25,3007.33,2025-09-10,Card,Nida
+C0954,Zain,Male,47,Lahore,Keyboard,Accessories,5,3385,15,14386.25,1838.13,2026-06-12,Cash,Usman
+C0955,Hamza,Male,63,Lahore,Printer,Office,2,25933,0,51866,5631.24,2025-12-26,Bank Transfer,Zoya
+C0956,Sara Ahmed,Male,28,Lahore,Laptop,Electronics,5,89474,10,402633,54066.96,2025-07-22,EasyPaisa,Usman
+C0957,Ahmed Raza,Male,64,Rawalpindi,Printer,Office,5,24736,10,111312,24385.99,2025-02-27,Card,Nida
+C0958,Hamza,Male,28,Lahore,Keyboard,Accessories,5,3411,10,15349.5,2255.71,2025-07-31,Card,Zoya
+C0959,Ali Khan,Male,18,Karachi,Keyboard,Accessories,2,3516,5,6680.4,1627.96,2025-11-02,Cash,Saad
+C0960,Zain,Female,25,Hyderabad,Monitor,Electronics,4,29120,5,110656,24123.77,2026-02-21,EasyPaisa,Aamir
+C0961,Usman,Male,20,Lahore,Headphones,Accessories,3,5362,0,16086,2381.16,2025-06-13,Card,Aamir
+C0962,Ahmed Raza,Male,40,Quetta,Printer,Office,3,24667,10,66600.9,8402.27,2025-11-28,JazzCash,Aamir
+C0963,Ayesha Khan,Male,33,Islamabad,Keyboard,Accessories,4,3421,15,11631.4,2836.29,2026-05-24,Cash,Aamir
+C0964,Maryam,Male,59,Karachi,Keyboard,Accessories,2,3822,15,6497.4,1257.59,2025-07-14,JazzCash,Saad
+C0965,Hamza,Female,44,Islamabad,Mouse,Accessories,5,1401,15,5954.25,1349.24,2025-05-28,EasyPaisa,Usman
+C0966,Hassan Ali,Female,19,Lahore,Laptop,Electronics,2,79731,0,159462,36460.84,2025-11-15,JazzCash,Zoya
+C0967,Ali Khan,Female,49,Hyderabad,Headphones,Accessories,5,4891,10,22009.5,3090.09,2025-01-14,Cash,Nida
+C0968,Ali Khan,Male,21,Rawalpindi,Printer,Office,5,24746,10,111357,17671.5,2026-01-06,JazzCash,Nida
+C0969,Hassan Ali,Female,49,Quetta,Printer,Office,1,25314,15,21516.9,5007.42,2026-05-12,EasyPaisa,Usman
+C0970,Ali Khan,Male,55,Hyderabad,Headphones,Accessories,3,4616,5,13155.6,1354.11,2025-07-28,EasyPaisa,Usman
+C0971,Fatima Noor,Male,52,Rawalpindi,Mouse,Accessories,3,1446,10,3904.2,685.97,2025-01-31,Cash,Nida
+C0972,Maryam,Female,39,Lahore,Mouse,Accessories,5,1558,15,6621.5,1193.11,2026-06-04,JazzCash,Usman
+C0973,Zain,Female,53,Karachi,Keyboard,Accessories,3,3501,0,10503,2034.75,2025-01-13,EasyPaisa,Aamir
+C0974,Fatima Noor,Female,61,Quetta,Laptop,Electronics,5,79021,0,395105,61145.81,2025-10-25,JazzCash,Usman
+C0975,Ali Khan,Female,49,Islamabad,Mouse,Accessories,2,1485,5,2821.5,692.71,2025-05-19,Card,Saad
+C0976,Hina,Female,19,Faisalabad,Keyboard,Accessories,2,3656,0,7312,1020.81,2026-01-10,EasyPaisa,Zoya
+C0977,Ali Khan,Female,40,Peshawar,Monitor,Electronics,5,25769,5,122402.75,12399.53,2025-05-04,EasyPaisa,Nida
+C0978,Bilal,Male,25,Peshawar,Keyboard,Accessories,5,3552,0,17760,2963.19,2025-11-12,Bank Transfer,Usman
+C0979,Hassan Ali,Female,38,Karachi,Headphones,Accessories,5,5108,0,25540,3063.9,2025-11-30,JazzCash,Zoya
+C0980,Fatima Noor,Male,43,Lahore,Keyboard,Accessories,2,3156,15,5365.2,1099.22,2025-10-20,Cash,Zoya
+C0981,Zain,Male,56,Faisalabad,Mouse,Accessories,2,1448,5,2751.2,535.71,2025-10-09,JazzCash,Usman
+C0982,Maryam,Female,51,Quetta,Keyboard,Accessories,1,3282,5,3117.9,459.26,2025-09-17,EasyPaisa,Zoya
+C0983,Bilal,Female,60,Faisalabad,Mouse,Accessories,5,1367,15,5809.75,750.81,2025-05-13,JazzCash,Nida
+C0984,Usman,Female,65,Rawalpindi,Headphones,Accessories,1,5076,0,5076,487.67,2025-04-06,EasyPaisa,Aamir
+C0985,Ahmed Raza,Female,46,Islamabad,Laptop,Electronics,1,86220,5,81909,7469.07,2026-02-09,EasyPaisa,Nida
+C0986,Sara Ahmed,Female,49,Hyderabad,Mouse,Accessories,5,1447,15,6149.75,984.97,2025-06-20,Bank Transfer,Zoya
+C0987,Ahmed Raza,Male,52,Peshawar,Printer,Office,1,25468,5,24194.6,4375.03,2025-10-14,EasyPaisa,Nida
+C0988,Hamza,Female,42,Faisalabad,Mouse,Accessories,5,1500,0,7500,607.24,2025-03-19,Card,Usman
+C0989,Maryam,Male,53,Faisalabad,Laptop,Electronics,2,83242,15,141511.4,23409.76,2026-05-09,EasyPaisa,Nida
+C0990,Ahmed Raza,Female,34,Peshawar,Printer,Office,1,25200,0,25200,3204.17,2026-01-21,Bank Transfer,Nida
+C0991,Fatima Noor,Female,44,Quetta,Monitor,Electronics,2,30679,0,61358,13283.32,2026-06-30,EasyPaisa,Usman
+C0992,Bilal,Male,22,Rawalpindi,Monitor,Electronics,4,30546,10,109965.6,15918.23,2025-02-13,JazzCash,Nida
+C0993,Hassan Ali,Male,50,Quetta,Headphones,Accessories,5,4921,5,23374.75,3076.17,2025-06-06,Card,Aamir
+C0994,Bilal,Female,26,Islamabad,Laptop,Electronics,4,85013,5,323049.4,31086.85,2026-02-16,Card,Nida
+C0995,Ahmed Raza,Male,30,Lahore,Laptop,Electronics,3,90606,15,231045.3,44989.73,2025-01-21,Bank Transfer,Nida
+C0996,Ayesha Khan,Female,24,Islamabad,Headphones,Accessories,3,4825,15,12303.75,1251.52,2025-06-08,Card,Nida
+C0997,Usman,Female,61,Quetta,Mouse,Accessories,2,1435,0,2870,586.74,2025-05-04,JazzCash,Nida
+C0998,Bilal,Male,37,Islamabad,Laptop,Electronics,1,76798,5,72958.1,11144.96,2026-04-29,JazzCash,Nida
+C0999,Maryam,Female,44,Peshawar,Keyboard,Accessories,2,3741,5,7107.9,1519.67,2025-01-17,Cash,Aamir
+C1000,Ahmed Raza,Male,53,Peshawar,Headphones,Accessories,2,5483,5,10417.7,2533.82,2025-06-11,EasyPaisa,Saad
